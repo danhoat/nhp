@@ -1,0 +1,603 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: vina\n"
+"POT-Creation-Date: 2015-06-21 01:38+0700\n"
+"PO-Revision-Date: 2015-06-21 01:39+0700\n"
+"Last-Translator: dan <danng@gmail.com>\n"
+"Language-Team: rab <danhoat@gmail.com>\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: D:\\xampp\\htdocs\\namhaphat\\wp-content\\themes"
+"\\namhaphat\\\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: _x;_e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/functions.php:87
+#, fuzzy
+msgid "Upload file fail"
+msgstr "Upload lỗi"
+
+#: admin/functions.php:93
+msgid "Uplaoded file success"
+msgstr "Upload thành công"
+
+#: admin/functions.php:102
+msgid "You don't allow access!"
+msgstr "Không có quyền xử lý"
+
+#: admin/functions.php:136 admin/settings.php:8 admin/settings.php:9
+#, fuzzy
+msgid "Rab Settings"
+msgstr "Cài đặt"
+
+#: admin/functions.php:153
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: admin/functions.php:154
+msgid "Describe the function of menu"
+msgstr ""
+
+#: admin/functions.php:155
+msgid "About Us"
+msgstr ""
+
+#: admin/options.php:66
+msgid "Save option success"
+msgstr ""
+
+#: admin/settings.php:35
+msgid "Website title"
+msgstr ""
+
+#: admin/settings.php:41
+msgid "Select files"
+msgstr ""
+
+#: admin/settings.php:55
+msgid "Website Description"
+msgstr ""
+
+#: admin/settings.php:60
+msgid "Copyright footer"
+msgstr ""
+
+#: admin/settings.php:65
+msgid "Google Font For  Title"
+msgstr ""
+
+#: admin/settings.php:81
+msgid "Google Analytics Script"
+msgstr ""
+
+#: admin/settings.php:85
+msgid "Save"
+msgstr ""
+
+#: admin/slider.php:41
+msgid "Slider Title"
+msgstr ""
+
+#: admin/slider.php:46
+msgid "Slider Name"
+msgstr ""
+
+#: admin/slider.php:52
+msgid "Save Slider"
+msgstr "Lưu"
+
+#: archive-product.php:13
+msgid "Our products"
+msgstr ""
+
+#: comments.php:42
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:43
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:44
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: content-dich-vu.php:21 content-post.php:18 content.php:18
+#: template/post.php:18 template/post_.php:19
+msgid ", "
+msgstr ""
+
+#: content-dich-vu.php:37 content-post.php:40 content.php:41
+#: inc/comments.php:55 template/post.php:41 template/post_.php:42
+msgid "Edit"
+msgstr ""
+
+#: content-dich-vu.php:48 content-post.php:54 content.php:55
+#: template/post.php:55 template/post_.php:56
+msgid "Pages:"
+msgstr ""
+
+#: content-post.php:37 content.php:37 template/post.php:37
+#: template/post_.php:38
+msgid "Leave a comment"
+msgstr ""
+
+#: content-post.php:37 content.php:37 template/post.php:37
+#: template/post_.php:38
+msgid "1 Comment"
+msgstr "1 ý kiến"
+
+#: content-post.php:37 content.php:37 template/post.php:37
+#: template/post_.php:38
+msgid "% Comments"
+msgstr "% ý kiến"
+
+#: content-post.php:52 content.php:53 template/post.php:53
+#: template/post_.php:54
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content-post.php:63 content.php:64 template/post.php:64
+#: template/post_.php:65
+msgid "Tagged :"
+msgstr ""
+
+#: functions.php:93
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:94
+msgid "Left Menu"
+msgstr ""
+
+#: functions.php:122
+msgid "This field is required"
+msgstr "Vui lòng không để rỗng"
+
+#: functions.php:123
+msgid "Please fix this field."
+msgstr ""
+
+#: functions.php:124
+msgid "Please enter a valid email address."
+msgstr "Email chưa đúng"
+
+#: functions.php:125
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: functions.php:126
+msgid "Please enter a valid date."
+msgstr ""
+
+#: functions.php:127
+msgid "Please enter a valid date (ISO)."
+msgstr ""
+
+#: functions.php:128
+msgid "Please enter a valid number."
+msgstr ""
+
+#: functions.php:129
+msgid "Please enter only digits."
+msgstr ""
+
+#: functions.php:130
+msgid "Please enter a valid credit card number."
+msgstr ""
+
+#: functions.php:131
+msgid "Please enter the same value again."
+msgstr ""
+
+#: functions.php:132
+msgid "Please enter a value with a valid extension."
+msgstr ""
+
+#: functions.php:133
+msgid "Please enter no more than {0} characters."
+msgstr ""
+
+#: functions.php:134
+msgid "Please enter at least {0} characters."
+msgstr ""
+
+#: functions.php:135
+msgid "Please enter a value between {0} and {1} characters long."
+msgstr ""
+
+#: functions.php:136
+msgid "Please enter a value between {0} and {1}."
+msgstr ""
+
+#: functions.php:137
+msgid "Please enter a value less than or equal to {0}."
+msgstr ""
+
+#: functions.php:138
+msgid "Please enter a value greater than or equal to {0}."
+msgstr ""
+
+#: functions.php:198
+msgid "The user name field is required"
+msgstr "Vui lòng nhập họ tên"
+
+#: functions.php:199
+msgid "The email field is required"
+msgstr "Vui lòng nhập email"
+
+#: functions.php:200
+msgid "The content field is required"
+msgstr "Vui lòng nhập nội dung"
+
+#: functions.php:201
+msgid "The number phone field is required"
+msgstr "Vui lòng nhập số điện thoại"
+
+#: functions.php:320
+msgid "Read more"
+msgstr "Xem thêm"
+
+#: functions.php:349
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: global/form-login.php:26
+msgid "Username or email"
+msgstr ""
+
+#: global/form-login.php:30
+msgid "Password"
+msgstr ""
+
+#: global/form-login.php:39
+msgid "Login"
+msgstr ""
+
+#: global/form-login.php:42
+msgid "Remember me"
+msgstr ""
+
+#: global/form-login.php:46
+msgid "Lost your password?"
+msgstr "Quên mật khẩu"
+
+#: inc/comments.php:23
+msgid "Pingback:"
+msgstr ""
+
+#: inc/comments.php:23
+msgid "(Edit)"
+msgstr ""
+
+#: inc/comments.php:38
+msgid "Post author"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: inc/comments.php:44
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/comments.php:50
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/comments.php:59
+msgid "Reply"
+msgstr ""
+
+#: inc/customizer.php:152 inc/customizer.php:153
+msgid "Background may only be visible on wide screens."
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "Site Title Color"
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Display Site Title &amp; Tagline"
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Select layout "
+msgstr ""
+
+#: inc/customizer.php:169
+msgid "Select number column layout you wnat to apply into your website"
+msgstr ""
+
+#: inc/customizer.php:182
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:186
+msgid "Only one column"
+msgstr ""
+
+#: inc/customizer.php:187
+msgid "Left column"
+msgstr ""
+
+#: inc/customizer.php:188
+msgid "Right column"
+msgstr ""
+
+#: inc/rab_ajax_action.php:10
+msgid "Please enter your information"
+msgstr ""
+
+#: inc/rab_ajax_action.php:30
+msgid "Email has been sent successfull"
+msgstr "Gửi mail thành công"
+
+#: inc/rab_ajax_action.php:33
+msgid "Send mail fail"
+msgstr "Gửi mail lỗi"
+
+#: inc/themes.php:84
+msgid "Sticky"
+msgstr ""
+
+#: inc/themes.php:118 inc/themes.php:120 inc/themes.php:121
+msgid "Partners"
+msgstr "Đối tác"
+
+#: inc/themes.php:119
+msgid "Partner"
+msgstr "Đối tác"
+
+#: inc/themes.php:122
+#, fuzzy
+msgid "Add New"
+msgstr "Thêm đối tác"
+
+#: inc/themes.php:123
+msgid "Add New Partner"
+msgstr "Thêm đối tác"
+
+#: inc/themes.php:124
+msgid "New Partner"
+msgstr ""
+
+#: inc/themes.php:125
+msgid "Edit Partner"
+msgstr "Sửa"
+
+#: inc/themes.php:126
+msgid "View Partner"
+msgstr ""
+
+#: inc/themes.php:127
+msgid "All Partners"
+msgstr "Đối tác"
+
+#: inc/themes.php:128
+msgid "Search Partners"
+msgstr ""
+
+#: inc/themes.php:129
+msgid "Parent Partners:"
+msgstr ""
+
+#: inc/themes.php:130
+msgid "No partners found."
+msgstr ""
+
+#: inc/themes.php:131
+msgid "No partners found in Trash."
+msgstr "Không tìm thấy đối tác nào"
+
+#: inc/themes.php:237
+msgid "There was a problem with your upload."
+msgstr ""
+
+#: inc/themes.php:241
+msgid "Template file update isssue?"
+msgstr ""
+
+#: inc/widgets.php:4
+msgid "Main  Sidebar"
+msgstr ""
+
+#: inc/widgets.php:6
+msgid "Main sidebar that appears on the left."
+msgstr ""
+
+#: inc/widgets.php:14
+msgid "Top header  sidebar"
+msgstr ""
+
+#: inc/widgets.php:16
+msgid "Header page."
+msgstr ""
+
+#: inc/widgets.php:24
+msgid "Top Content"
+msgstr ""
+
+#: inc/widgets.php:26
+msgid "Top content."
+msgstr ""
+
+#: inc/widgets.php:35 inc/widgets.php:44
+msgid "Footer Sidebar"
+msgstr ""
+
+#: inc/widgets.php:37
+msgid "Main sidebar that appears on the bottom content."
+msgstr ""
+
+#: inc/widgets.php:46
+msgid "Footer sidebar that appears on footer."
+msgstr ""
+
+#: inc/widgets.php:62 inc/widgets.php:124 inc/widgets/post-slider.php:14
+msgid "A list of your site&#8217;s Pages."
+msgstr ""
+
+#: inc/widgets.php:63
+msgid "Facebook Fan Page"
+msgstr ""
+
+#: inc/widgets.php:106 inc/widgets.php:161 inc/widgets/post-slider.php:155
+msgid "Title"
+msgstr ""
+
+#: inc/widgets.php:108
+msgid "Facebook Page Url"
+msgstr ""
+
+#: inc/widgets.php:112
+msgid "Show Posts"
+msgstr ""
+
+#: inc/widgets.php:125
+msgid "Twitter Time Line"
+msgstr ""
+
+#: inc/widgets.php:163
+msgid "Twiter name"
+msgstr ""
+
+#: inc/widgets/category-product.php:15
+msgid "Product Categories"
+msgstr ""
+
+#: inc/widgets/category-product.php:16
+msgid "List Product categories"
+msgstr ""
+
+#: inc/widgets/post-slider.php:15
+msgid "Rap slider 1"
+msgstr ""
+
+#: inc/widgets/post-slider.php:137
+msgid "Select type effect"
+msgstr ""
+
+#: inc/widgets/post-slider.php:146
+msgid "Select thumbnail size"
+msgstr ""
+
+#: inc/widgets/post-slider.php:149
+msgid "Full"
+msgstr ""
+
+#: inc/widgets/post-slider.php:150
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/widgets/post-slider.php:157
+msgid "Speed:"
+msgstr ""
+
+#: inc/widgets/post-slider.php:161
+msgid "Show Nav"
+msgstr "Hiển thị thanh điều hướng"
+
+#: index.php:31
+msgid "Products"
+msgstr ""
+
+#: template/block-partner.php:10
+msgid "Our Parner"
+msgstr "Đối tác của Nam Hà Phát"
+
+#: template/contact-form.php:5
+msgid "Your name: (*)"
+msgstr "Họ tên: (*)"
+
+#: template/contact-form.php:8
+msgid "your name"
+msgstr "Tên của bạn"
+
+#: template/contact-form.php:13
+msgid "Address:"
+msgstr "Địa chỉ: "
+
+#: template/contact-form.php:16
+msgid "Your address"
+msgstr "Địa chỉ của bạn"
+
+#: template/contact-form.php:21
+msgid "Your phone number: (*)"
+msgstr "Điện thoại:(*)"
+
+#: template/contact-form.php:24
+msgid "Your phone number"
+msgstr "Điện thoại"
+
+#: template/contact-form.php:29
+msgid "Email: (*)"
+msgstr ""
+
+#: template/contact-form.php:32
+msgid "Your Email"
+msgstr "Email của bạn"
+
+#: template/contact-form.php:38
+msgid "Content: (*)"
+msgstr "Nội dung:(*)"
+
+#: template/contact-form.php:41
+msgid "content"
+msgstr "Nội dung"
+
+#: template/contact-form.php:49
+msgid "Sending..."
+msgstr "Đang gửi ..."
+
+#: template/contact-form.php:49
+msgid "Send"
+msgstr "Gửi"
+
+#: template/none.php:12
+msgid "Nothing Found"
+msgstr "Không tìm thấy"
+
+#: template/none.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template/none.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template/none.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#~ msgid "Where is the file?"
+#~ msgstr "Where is the file?"
+
+#, fuzzy
+#~ msgid "Rab Settings 123"
+#~ msgstr "Cài đặt"
+
+#, fuzzy
+#~ msgid "Rab Settings a"
+#~ msgstr "Cài đặt"
+
+#~ msgid "Rab Settings b"
+#~ msgstr "Cài đặt 123 222"
+
+#~ msgid "test language"
+#~ msgstr "kiểm tra ngôn ngữ"
