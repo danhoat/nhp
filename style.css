@@ -1,0 +1,248 @@
+/*
+Theme Name: Nam Ha Phat
+Theme URI: http://www.rabthemes.com/
+Author: Ranthemes developer team
+Author URI: http://www.rabthemes.com/
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: RAB_DOMAIN
+
+*/
+.sticky {
+
+}
+.gallery-caption{
+
+}
+.bypostauthor {
+
+}
+.git {
+
+}
+/* Images */
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-page .entry-page{
+	min-height: 350px;
+}
+
+.block-partner img{
+	width: 100%;
+	height: 150px;
+	max-width: 263px;
+	opacity: 0.9;
+}
+body{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+body .form-group input.form-control{
+	height: 40px;
+	border-radius: 3px;
+}
+
+.form-group  label{
+	font-weight: normal;
+}
+body .form-group  textarea{
+	border-radius: 3px;
+}
+.block-partner h3{
+	font-size1: 15px;
+}
+.block-partner .col-xs-12{
+	text-align: center;
+}
+div.full-row{
+	margin: 0 !important;
+}
+div.top-row .col-lg-12,
+div.top-row .row{
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+}
+@media (max-width: 768px) {
+	div.form-group .col-sm-2,
+	div.form-group .col-sm-9{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+}
+
+
+.tparrows.default.miami-light 				{ 	width:23px; height:44px;  padding-top: 50px; padding-bottom: 50px; background: transparent; }
+.tparrows.default.miami-light:after 		{	position:absolute;  line-height: 50px; text-align: center;  font-family: "revicons"; color: #fff; color:#aaa; font-size:50px; top:0px;left:0px;z-index:0; width:23px; height:44px;   -webkit-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; -ms-transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;  }
+.tparrows.default.miami-light:hover:after 	{	color: #fff; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); }
+.tp-rightarrow.miami-light					{   padding-right: 100px; }
+.tp-leftarrow.miami-light					{   padding-left: 100px; }
+.tp-rightarrow.miami-light:after			{	content: '\e825'; padding-left: 76px; padding-top: 25px; }
+.tp-leftarrow.miami-light:after				{	content: '\e824'; padding-right: 76px; padding-top: 25px; }
+
+/* BULLET STYLE */
+.tp-bullets.simplebullets.miami-light 				{ 	height:9px; vertical-align:middle; line-height:10px }
+.tp-bullets.simplebullets.miami-light .bullet 		{	cursor:pointer;width: 9px; height: 9px;background: #aaa; float: left; position: relative; margin-right: 7px; border-radius:50%; -webkit-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  
+
+}
+.tp-bullets.simplebullets.miami-light .bullet.selected,
+.tp-bullets.simplebullets.miami-light .bullet:hover	{	background: #fff; 	
+-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.5);
+box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.5);}
+.tp-bullets.simplebullets.miami-light .bullet.last 	{ 	margin-right:0px; }
+
+
+/* DARK ON LIGHT */
+/* NAV ARROW STYLE */
+.tparrows.default.miami-dark 				{	width:23px; height:44px;  padding-top: 50px;padding-bottom: 50px;background: transparent;}
+.tparrows.default.miami-dark:after 			{	position:absolute;  line-height: 50px;text-align: center; font-family: "revicons";color: #333; color:rgba(51,51,51,0.5);font-size:50px; top:0px;left:0px;z-index:0; width:23px; height:44px;  -webkit-transition: color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out; -ms-transition: color 0.3s ease-in-out;  }
+.tparrows.default.miami-dark:hover:after 	{	color: #333; color:rgba(51,51,51,1);}
+
+.tp-rightarrow.miami-dark					{   padding-right: 100px; }
+.tp-leftarrow.miami-dark					{   padding-left: 100px; }
+.tp-rightarrow.miami-dark:after				{	content: '\e825'; padding-left: 76px; padding-top: 25px; }
+.tp-leftarrow.miami-dark:after				{	content: '\e824'; padding-right: 76px; padding-top: 25px; }
+
+
+/* BULLET STYLE */
+.tp-bullets.simplebullets.miami-dark 			{ height:9px; vertical-align:middle; line-height:10px	}
+.tp-bullets.simplebullets.miami-dark .bullet 	{	cursor:pointer;width: 9px;height: 9px;background: #333; background:rgba(51,51,51,0.5);float: left;position: relative;margin-right: 7px;border-radius:50%;
+  													-webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out;}
+.tp-bullets.simplebullets.miami-dark .bullet.selected,
+.tp-bullets.simplebullets.miami-dark .bullet:hover 	{	background: #333; }
+.tp-bullets.simplebullets.miami-dark .bullet.last 	{ 	margin-right:0px; }
+
+.col-lg-12.top-sidebar{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.main-sidebar  .rab_slider  h5{
+	width: 100%;
+    overflow: hidden;
+    text-align: justify;
+    text-overflow: ellipsis;
+    margin-bottom: 1px;
+    white-space: nowrap;
+}
+.widget p{
+	text-align: justify;
+	padding: 0 3px 0 1px;
+}
+.rab_slider  img{
+	max-height: 159px;
+}
+.main-page a {
+	color: #ff6f00;
+}
+.flexslider a.moretag{
+	padding: 1px 2px 0px 8px;
+	border-radius: 1px;
+	float: right;
+	background: #eb911f;
+	color: #fff;
+}
+.flexslider a.moretag span{
+	visibility: hidden;
+}
+.flexslider a.moretag:hover span{
+	visibility: visible;
+}
+
+.form-group{
+	display: block;
+	clear: both;
+}
+body .notification{
+	top: 0;
+	height: 39px;
+	width: 100%;
+	position: fixed;
+	z-index: 999999;
+	background: #eb911f;
+	display:none;
+}
+body .notification .container{
+	z-index: 10;
+	margin: 0  auto;
+}
+body .notification .container .msg{
+	text-align: center;
+	height: 39px;
+	line-height: 39px;
+	color: #fff;
+	opacity: 1;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+.post-item{
+	display: table;
+	width: 100%;
+	clear: both;
+}
+.top-row{
+}
+img{
+	height: auto;
+}
+.widget .flexslider .post-thumbnail img{
+	padding-bottom: 5px;
+}
+.content{
+	padding: 10px;
+}
+body.archive a.moretag{
+	float: right;
+}
+.wp-caption{
+	max-width: 100%;
+}
+.wp-caption-text{
+	text-align: center;
+}
+.footer-site .footer-top{
+	padding: 0;
+	margin-top: 0;
+}
+.footer-site .row.footer-top{
+	margin-top: 0;
+}
+#slider.flexslider{
+	margin-bottom: 10px;
+}
+#carousel{
+	width: 92%;
+	margin: 0 auto;
+}
+
+#slider img{
+	max-height: 350px;
+}
+.col-lg-3.right-sidebar{
+	float: right;
+	padding-left: 0;
+	padding-right: 15px;
+}
+.pd-right-none{
+	padding-right: 0 !important;
+}
+@media (max-width: 992px) {
+   .visible-tablet-mobile{
+        display: none !important;
+   	}
+}
