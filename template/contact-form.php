@@ -5,7 +5,7 @@
             <label for="user_name"><?php _e('Your name: (*)',RAB_DOMAIN);?></label>
         </div>
         <div class="col-sm-9">
-            <input class="form-control required" id="user_name" placeholder="<?php _e('your name',RAB_DOMAIN);?>" name="user_name">
+            <input class="form-control required" id="user_name" placeholder="<?php _e('Your name',RAB_DOMAIN);?>" name="user_name">
         </div>
     </div>
     <div class="form-group">
@@ -35,10 +35,10 @@
 
     <div class="form-group">
         <div class="col-sm-2">
-            <label for="content"><?php _e('Content: (*)',RAB_DOMAIN);?></label>
+            <label for="message"><?php _e('Message: (*)',RAB_DOMAIN);?></label>
         </div>
         <div class="col-sm-9">
-            <textarea class="form-control required" rows="8" cols="20" name="content"  placeholder="<?php _e('content',RAB_DOMAIN);?>" ></textarea>
+            <textarea class="form-control required" rows="8" cols="20" name="message"  placeholder="<?php _e('Message',RAB_DOMAIN);?>" ></textarea>
         </div>
         <input type="hidden" name="action" value="rab_contact">
     </div>
