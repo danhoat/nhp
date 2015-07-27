@@ -3,7 +3,7 @@
  * ovveride wp_mail WordPress default.
  * @return boolean
  */
-	function ra_mailing( $to, $subject, $message, $header ){
+	function ra_mailing( $to, $subject, $message, $header = false ){
 
 		add_filter( 'wp_mail_content_type', 'set_html_content_type' );
 

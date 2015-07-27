@@ -29,7 +29,7 @@
 
 			$subject 	= sprintf(__('Email auto sent from %s',RAB_DOMAIN ), get_option('blogname') );
 			$msg 		= __('<p>This is auto email from [site_name] .</p><p> We have just received your message.</p><p> Thank you for your time </p>', RAB_DOMAIN);
-			$auto 		= ra_mailing( $request['user_email'], $subject, $msg );
+			$auto 		= ra_mailing( $request['user_email'], $subject, $msg, $headers );
 			wp_send_json(array('success' => true, 'msg' => __('Email has been sent successfull', RAB_DOMAIN)));
 
 		} else {
