@@ -25,11 +25,14 @@
 		$mail = ra_mailing( $admin_email, 'Contact from website', $message, $headers);
 
 		if ( $mail ){
-			$msg = __('This is auto email from [site_name] .<br /> We have just received your message.<br /> Thank you for your time ', RAB_DOMAIN);
-			$auto = ra_mailing( $request['user_email'], 'Email auto sent from abc.com. Thak for your time to contact with us.', $msg );
+
+			$subject 	= sprintf(__('Email auto sent from %s',RAB_DOMAIN ), get_option('name') );
+			$msg 		= __('This is auto email from [site_name] .<br /> We have just received your message.<br /> Thank you for your time ', RAB_DOMAIN);
+			$auto 		= ra_mailing( $request['user_email'], $subject, $msg );
 			wp_send_json(array('success' => true, 'msg' => __('Email has been sent successfull', RAB_DOMAIN)));
 
 		} else {
+
 			wp_send_json(array('success' => false, 'msg' => __('Send mail fail', RAB_DOMAIN)));
 		}
 	}
