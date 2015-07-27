@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vi_Vi\n"
 "POT-Creation-Date: 2015-07-28 00:52+0700\n"
-"PO-Revision-Date: 2015-07-28 00:54+0700\n"
+"PO-Revision-Date: 2015-07-28 00:55+0700\n"
 "Last-Translator: dan <danng@gmail.com>\n"
 "Language-Team: rab <danhoat@gmail.com>\n"
 "Language: vi_VN\n"
@@ -558,7 +558,7 @@ msgstr "Email của bạn"
 
 #: template/contact-form.php:37
 msgid "Message: (*)"
-msgstr "Nội dung\" (*)"
+msgstr "Nội dung: (*)"
 
 #: template/contact-form.php:40
 msgid "Message"
