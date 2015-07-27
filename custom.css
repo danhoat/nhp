@@ -212,4 +212,11 @@ ul, ol {
     border: 1px solid #ccc;
     border-radius: 3px;
     display: inline-block;
-    padding: 3px 12px;
+    padding: 0;
+}
+
+.page-numbers li a,
+.page-numbers li span{
+  padding: 3px 12px;
+  display: block;
+}
