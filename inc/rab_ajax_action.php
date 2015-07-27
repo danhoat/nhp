@@ -10,8 +10,8 @@
 			wp_send_json(array('success' => true, 'msg' => __('Please enter your information', RAB_DOMAIN)));
 		}
 		$admin_email 	= get_option('admin_email');
-		$message 	= 'Email from abc.com';
-		$message 	.= 'Visitor information:<br />Full name:[user_name].<br /> Phone: [user_phone].<br /> Email: [user_email].<br /> Address: [user_address].<br />Content :[content]';
+		$message 	= 'Contact from [site_name] :';
+		$message 	.= '<p>Information :</p> <label> Full name : </label>[user_name].<br /><label> Phone :</label>[user_phone].<br /> <label> Email : </label>[user_email].<br /> <label> Address : </label>[user_address].<br /><label>Content :</label>[content]';
 
 		$message  	= str_replace("[user_name]", $request['user_name'], $message);
 		$message  	= str_replace("[user_address]", $request['user_address'], $message);
@@ -22,12 +22,13 @@
 		$headers = array(
 			'Reply-To' => $request['user_email']
 		);
-		$mail = ra_mailing( $admin_email, 'Contact from website', $message, $headers);
+		$subject 	= sprintf(__('Contact From %s',RAB_DOMAIN ), get_option('blogname') );
+		$mail = ra_mailing( $admin_email, $subject, $message, $headers);
 
 		if ( $mail ){
 
-			$subject 	= sprintf(__('Email auto sent from %s',RAB_DOMAIN ), get_option('name') );
-			$msg 		= __('This is auto email from [site_name] .<br /> We have just received your message.<br /> Thank you for your time ', RAB_DOMAIN);
+			$subject 	= sprintf(__('Email auto sent from %s',RAB_DOMAIN ), get_option('blogname') );
+			$msg 		= __('<p>This is auto email from [site_name] .</p><p> We have just received your message.</p><p> Thank you for your time </p>', RAB_DOMAIN);
 			$auto 		= ra_mailing( $request['user_email'], $subject, $msg );
 			wp_send_json(array('success' => true, 'msg' => __('Email has been sent successfull', RAB_DOMAIN)));
 

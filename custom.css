@@ -81,12 +81,11 @@ ul, ol {
 }
 .block-menu-category .menu a:before,
 .block-menu-category .mcategory a:before {
-  color: #AAB2BD;
   content: "";
   display: inline-block;
   font-family: "FontAwesome";
   font-weight: normal;
-  color: #6052DB;
+  color: #eb911f;
   padding: 0px 5px;
 }
 .block-menu-category .menu li,

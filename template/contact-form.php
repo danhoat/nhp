@@ -4,7 +4,7 @@
             <label for="user_name"><?php _e('Your name: (*)',RAB_DOMAIN);?></label>
         </div>
         <div class="col-sm-9">
-            <input class="form-control required" id="user_name" placeholder="<?php _e('Your name',RAB_DOMAIN);?>" name="user_name">
+            <input class="form-control required" id="user_name"  placeholder="<?php _e('Your name',RAB_DOMAIN);?>" name="user_name">
         </div>
     </div>
     <div class="form-group">

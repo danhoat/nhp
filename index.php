@@ -5,7 +5,7 @@
 
 ?>
 <?php get_header(); ?>
-<?php global $number_column, $col_bootrap, $content_class; ?>
+<?php global $number_column, $col_bootrap, $content_class, $theme_layout; ?>
 <div class="row full-row">
     <div class="container main-page">
      <div class=" main-content">
@@ -21,6 +21,8 @@
             <?php
             if( !empty($content_class) )
                 echo '<div class="'.$content_class.'">';
+            if ($theme_layout != 'one-column')
+                echo '<div class="entry-page">';
             ?>
             <?php
             do_action("rab_before_loop");
@@ -51,7 +53,8 @@
                 get_template_part('template/none' );
 
             endif;
-
+             if ($theme_layout != 'one-column')
+                echo '</div> <!-- entry-pag !-->';
             ?>
             <?php do_action("rab_after_loop") ?>
             <?php

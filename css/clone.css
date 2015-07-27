@@ -254,7 +254,6 @@ a:hover {
   background: white;
   overflow: hidden;
   margin-bottom: 15px;
-  padding-bottom: 15px;
   line-height: 21px;
 }
 .main-sidebar .widget div.textwidget{
@@ -1423,7 +1422,7 @@ body.woocommerce .onsale:after {
   letter-spacing: normal;
   position: relative;
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
 }
 .m-t-15 {
   margin-top: 15px !important;

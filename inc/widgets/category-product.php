@@ -30,10 +30,11 @@ class RAB_Widget_Product_Categories extends WP_Widget {
 		$list_args = $instance;
 		extract($instance);
 		extract($args);
+		echo $before_widget;
 		if( !empty( $title ) )
 				echo $before_title .$title. $after_title;
 		$list_args = array(  'title_li' =>'', 'taxonomy' => 'product_cat', 'hide_empty' => false );
-		//echo $args['before_widget'];
+
 		echo '<div class="block-menu-category">';
 		echo '<ul id="menu-danh-muc-san-pham" class="mcategory">';
 
@@ -41,7 +42,7 @@ class RAB_Widget_Product_Categories extends WP_Widget {
 
 		echo '</ul>';
 		echo '</div>';
-		//echo $args['after_widget'];
+		echo $after_widget;
 	}
 
 	/**

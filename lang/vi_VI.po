@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: vi_Vi\n"
-"POT-Creation-Date: 2015-07-28 01:26+0700\n"
-"PO-Revision-Date: 2015-07-28 01:26+0700\n"
+"POT-Creation-Date: 2015-07-28 01:52+0700\n"
+"PO-Revision-Date: 2015-07-28 01:52+0700\n"
 "Last-Translator: dan <danng@gmail.com>\n"
 "Language-Team: rab <danhoat@gmail.com>\n"
 "Language: vi_VN\n"
@@ -337,24 +337,30 @@ msgstr ""
 msgid "Please enter your information"
 msgstr ""
 
-#: inc/rab_ajax_action.php:29
+#: inc/rab_ajax_action.php:25
+#, php-format
+msgid "Contact From %s"
+msgstr ""
+
+#: inc/rab_ajax_action.php:30
 #, php-format
 msgid "Email auto sent from %s"
 msgstr "Email thông báo từ %s"
 
-#: inc/rab_ajax_action.php:30
+#: inc/rab_ajax_action.php:31
 msgid ""
-"This is auto email from [site_name] .<br /> We have just received your "
-"message.<br /> Thank you for your time "
+"<p>This is auto email from [site_name] .</p><p> We have just received your "
+"message.</p><p> Thank you for your time </p>"
 msgstr ""
-"Đây là email tự động từ [site_name] .<br /> Chúng tôi đã nhận được thông tin "
-"liên hệ của bạn. <br />Cảm ơn bạn đã dành thời gian cho chúng tôi. "
+"<p>Đây là email tự động từ [site_name] .</p><p> Chúng tôi đã nhận được thông "
+"tin liên hệ của bạn và sẽ liên hệ với bạn trong thời gian sớm nhất có thể. </"
+"p><p>Xin cám ơn. </p>"
 
-#: inc/rab_ajax_action.php:32
+#: inc/rab_ajax_action.php:33
 msgid "Email has been sent successfull"
 msgstr "Gửi mail thành công"
 
-#: inc/rab_ajax_action.php:36
+#: inc/rab_ajax_action.php:37
 msgid "Send mail fail"
 msgstr "Gửi mail lỗi"
 
@@ -534,9 +540,8 @@ msgid "Your name: (*)"
 msgstr "Họ tên: (*)"
 
 #: template/contact-form.php:7
-#, fuzzy
 msgid "Your name"
-msgstr "Tên của bạn"
+msgstr "Nhập họ tên"
 
 #: template/contact-form.php:12
 msgid "Address:"
