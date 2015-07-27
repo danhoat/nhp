@@ -22,16 +22,25 @@
 		$headers = array(
 			'Reply-To' => $request['user_email']
 		);
+		add_filter( 'wp_mail_content_type', 'set_html_content_type' );
 
-		$mail = wp_mail($ad_email, 'Contact from website', $message, $headers);
+		wp_mail( $to, $subject, $body );
+
+		// Reset content-type to avoid conflicts -- http://core.trac.wordpress.org/ticket/23578
+		remove_filter( 'wp_mail_content_type', 'set_html_content_type' );
+
+		$mail = wp_mail( $ad_email, 'Contact from website', $message, $headers);
 
 		if ( $mail ){
-			$auto = wp_mail($request['user_email'], 'Email auto sent from abc.com. Thak for your time to contact with us.');
+			$msg = __('This is auto email from %s<br /> We have just received your message. Thank you for your time ', RAB_DOMAIN);
+			$auto = wp_mail( $request['user_email'], 'Email auto sent from abc.com. Thak for your time to contact with us.', $msg );
 			wp_send_json(array('success' => true, 'msg' => __('Email has been sent successfull', RAB_DOMAIN)));
 
 		} else {
 			wp_send_json(array('success' => false, 'msg' => __('Send mail fail', RAB_DOMAIN)));
 		}
 	}
-
+	function set_html_content_type() {
+			return 'text/html';
+		}
 ?>

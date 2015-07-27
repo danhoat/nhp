@@ -205,3 +205,11 @@ ul, ol {
 /**
  * ENd category menu
  */
+
+
+
+.page-numbers li {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 3px 12px;

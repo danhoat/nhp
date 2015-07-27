@@ -160,9 +160,9 @@ function add_post_class($class){
 	    global $wp_query;
 
 	    $big = 999999999; // need an unlikely integer
-	    echo '<nav class="woocommerce-pagination">';
+	    echo '<nav class="pagination">';
 
-	        echo paginate_links( apply_filters( 'woocommerce_pagination_args', array(
+	        echo paginate_links( apply_filters( 'ra_pagination_args', array(
 	            'base'         => esc_url( str_replace( 999999999, '%#%', remove_query_arg( 'add-to-cart', get_pagenum_link( 999999999, false ) ) ) ),
 	            'format'       => '',
 	            'current'      => max( 1, get_query_var( 'paged' ) ),

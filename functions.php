@@ -3,9 +3,8 @@
 define('TEMPLATEURL', get_template_directory_uri() );
 define('TEMPLATE_PATH',get_template_directory());
 
-if(!defined('RAB_DOMAIN'))
-define('RAB_DOMAIN','rab_domain');
 
+define('RAB_DOMAIN','rab_domain');
 define('RAB_VERSION','1.0');
 
 require get_template_directory() . '/class/class_post.php';
