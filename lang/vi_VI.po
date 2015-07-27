@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: vi_Vi\n"
-"POT-Creation-Date: 2015-07-28 00:52+0700\n"
-"PO-Revision-Date: 2015-07-28 00:57+0700\n"
+"POT-Creation-Date: 2015-07-28 01:20+0700\n"
+"PO-Revision-Date: 2015-07-28 01:21+0700\n"
 "Last-Translator: dan <danng@gmail.com>\n"
 "Language-Team: rab <danhoat@gmail.com>\n"
 "Language: vi_VN\n"
@@ -150,103 +150,103 @@ msgstr ""
 msgid "Tagged :"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:93
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:93
+#: functions.php:94
 msgid "Left Menu"
 msgstr ""
 
-#: functions.php:121
+#: functions.php:122
 msgid "This field is required"
 msgstr "Vui lòng không để rỗng"
 
-#: functions.php:122
+#: functions.php:123
 msgid "Please fix this field."
 msgstr ""
 
-#: functions.php:123
+#: functions.php:124
 msgid "Please enter a valid email address."
 msgstr "Email chưa đúng"
 
-#: functions.php:124
+#: functions.php:125
 msgid "Please enter a valid URL."
 msgstr ""
 
-#: functions.php:125
+#: functions.php:126
 msgid "Please enter a valid date."
 msgstr ""
 
-#: functions.php:126
+#: functions.php:127
 msgid "Please enter a valid date (ISO)."
 msgstr ""
 
-#: functions.php:127
+#: functions.php:128
 msgid "Please enter a valid number."
 msgstr ""
 
-#: functions.php:128
+#: functions.php:129
 msgid "Please enter only digits."
 msgstr ""
 
-#: functions.php:129
+#: functions.php:130
 msgid "Please enter a valid credit card number."
 msgstr ""
 
-#: functions.php:130
+#: functions.php:131
 msgid "Please enter the same value again."
 msgstr ""
 
-#: functions.php:131
+#: functions.php:132
 msgid "Please enter a value with a valid extension."
 msgstr ""
 
-#: functions.php:132
+#: functions.php:133
 msgid "Please enter no more than {0} characters."
 msgstr ""
 
-#: functions.php:133
+#: functions.php:134
 msgid "Please enter at least {0} characters."
 msgstr ""
 
-#: functions.php:134
+#: functions.php:135
 msgid "Please enter a value between {0} and {1} characters long."
 msgstr ""
 
-#: functions.php:135
+#: functions.php:136
 msgid "Please enter a value between {0} and {1}."
 msgstr ""
 
-#: functions.php:136
+#: functions.php:137
 msgid "Please enter a value less than or equal to {0}."
 msgstr ""
 
-#: functions.php:137
+#: functions.php:138
 msgid "Please enter a value greater than or equal to {0}."
 msgstr ""
 
-#: functions.php:197
+#: functions.php:198
 msgid "The user name field is required"
 msgstr "Vui lòng nhập họ tên"
 
-#: functions.php:198
+#: functions.php:199
 msgid "The email field is required"
 msgstr "Vui lòng nhập email"
 
-#: functions.php:199
+#: functions.php:200
 msgid "The content field is required"
 msgstr "Vui lòng nhập nội dung"
 
-#: functions.php:200
+#: functions.php:201
 msgid "The number phone field is required"
 msgstr "Vui lòng nhập số điện thoại"
 
-#: functions.php:319
+#: functions.php:320
 msgid "Read more"
 msgstr "Xem thêm"
 
-#: functions.php:348
+#: functions.php:349
 #, php-format
 msgid "Page %s"
 msgstr ""
@@ -337,18 +337,19 @@ msgstr ""
 msgid "Please enter your information"
 msgstr ""
 
-#: inc/rab_ajax_action.php:34
-#, php-format
+#: inc/rab_ajax_action.php:28
 msgid ""
-"This is auto email from %s<br /> We have just received your message. Thank "
-"you for your time "
+"This is auto email from [site_name] <br />. We have just received your "
+"message<br />. Thank you for your time "
 msgstr ""
+"Đây là email tự động từ [site_name] <br />. Chúng tôi đã nhận được thông tin "
+"liên hệ của bạn<br />. Cảm ơn bạn đã dành thời gian cho chúng tôi. "
 
-#: inc/rab_ajax_action.php:36
+#: inc/rab_ajax_action.php:30
 msgid "Email has been sent successfull"
 msgstr "Gửi mail thành công"
 
-#: inc/rab_ajax_action.php:39
+#: inc/rab_ajax_action.php:33
 msgid "Send mail fail"
 msgstr "Gửi mail lỗi"
 

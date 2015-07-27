@@ -11,6 +11,7 @@ require get_template_directory() . '/class/class_post.php';
 require get_template_directory() . '/inc/index.php';
 require get_template_directory() . '/woo/index.php';
 require get_template_directory() . '/admin/options.php';
+require get_template_directory() . '/inc/mailing.php';
 require get_template_directory() . '/inc/rab_ajax_action.php';
 
 
