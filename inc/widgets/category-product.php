@@ -26,8 +26,13 @@ class RAB_Widget_Product_Categories extends WP_Widget {
 	 * @param array $instance Saved values from database.
 	 */
 	public function widget( $args, $instance ) {
+
 		$list_args = $instance;
-		$list_args = array( 'show_count' => $c, 'hierarchical' => $h, 'taxonomy' => 'product_cat', 'hide_empty' => false );
+		extract($instance);
+		extract($args);
+		if( !empty( $title ) )
+				echo $before_title .$title. $after_title;
+		$list_args = array( 'show_count' => $c,'title_li' =>'', 'hierarchical' => $h, 'taxonomy' => 'product_cat', 'hide_empty' => false );
 		//echo $args['before_widget'];
 		echo '<div class="block-menu-category">';
 		echo '<ul id="menu-danh-muc-san-pham" class="mcategory">';
@@ -46,8 +51,14 @@ class RAB_Widget_Product_Categories extends WP_Widget {
 	 *
 	 * @param array $instance Previously saved values from database.
 	 */
-	public function form( $instance ) {
-		
+	public function form( $instance ) { 
+		extract($instance);
+		?>
+		<p>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title',RAB_DOMAIN); ?> : </label>
+			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
+
+		<?php
 	}
 
 	/**

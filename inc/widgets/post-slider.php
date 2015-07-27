@@ -116,10 +116,7 @@ class RAB_Slider_Widget extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 
 		$instance = $old_instance;
-		// var_dump($old_instance);
-		// var_dump($instance);
-		// var_dump($new_instance);
-		//die();
+
 		return $new_instance;
 	}
 
@@ -162,7 +159,7 @@ class RAB_Slider_Widget extends WP_Widget {
 			<input <?php if($nav ==1) echo 'checked ="checked"';?> id="<?php echo $this->get_field_id('nav'); ?>" name="<?php echo $this->get_field_name('nav'); ?>" type="checkbox" value="1"  />
 		</p>
 
-<?php
+		<?php
 	}
 
 }
