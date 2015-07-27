@@ -34,7 +34,7 @@
 
     <div class="form-group">
         <div class="col-sm-2">
-            <label for="message"><?php _e('Message: (*)',RAB_DOMAIN);?></label>
+            <label for="message"><?php _e('Message: (*)', RAB_DOMAIN);?></label>
         </div>
         <div class="col-sm-9">
             <textarea class="form-control required" rows="8" cols="20" name="content"  placeholder="<?php _e('Message',RAB_DOMAIN);?>" ></textarea>
