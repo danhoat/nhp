@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: vi_Vi\n"
-"POT-Creation-Date: 2015-07-28 01:20+0700\n"
-"PO-Revision-Date: 2015-07-28 01:21+0700\n"
+"POT-Creation-Date: 2015-07-28 01:22+0700\n"
+"PO-Revision-Date: 2015-07-28 01:23+0700\n"
 "Last-Translator: dan <danng@gmail.com>\n"
 "Language-Team: rab <danhoat@gmail.com>\n"
 "Language: vi_VN\n"
@@ -338,9 +338,10 @@ msgid "Please enter your information"
 msgstr ""
 
 #: inc/rab_ajax_action.php:28
+#, fuzzy
 msgid ""
-"This is auto email from [site_name] <br />. We have just received your "
-"message<br />. Thank you for your time "
+"This is auto email from [site_name] .<br /> We have just received your "
+"message.<br /> Thank you for your time "
 msgstr ""
 "Đây là email tự động từ [site_name] <br />. Chúng tôi đã nhận được thông tin "
 "liên hệ của bạn<br />. Cảm ơn bạn đã dành thời gian cho chúng tôi. "
