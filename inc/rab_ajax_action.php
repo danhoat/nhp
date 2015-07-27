@@ -9,7 +9,7 @@
 		if( is_null($_POST['user_name']) || is_null($request['user_email']) || is_null($request['content']) ){
 			wp_send_json(array('success' => true, 'msg' => __('Please enter your information', RAB_DOMAIN)));
 		}
-		$ad_email 	= get_option('admin_email');
+		$admin_email 	= get_option('admin_email');
 		$message 	= 'Email from abc.com';
 		$message 	.= 'Visitor information:<br />Full name:[user_name].<br /> Phone: [user_phone].<br /> Email: [user_email].<br /> Address: [user_address].<br />Content :[content]';
 
@@ -22,14 +22,13 @@
 		$headers = array(
 			'Reply-To' => $request['user_email']
 		);
-		add_filter( 'wp_mail_content_type', 'set_html_content_type' );
+		//add_filter( 'wp_mail_content_type', 'set_html_content_type' );
 
-		wp_mail( $to, $subject, $body );
 
 		// Reset content-type to avoid conflicts -- http://core.trac.wordpress.org/ticket/23578
-		remove_filter( 'wp_mail_content_type', 'set_html_content_type' );
+		//remove_filter( 'wp_mail_content_type', 'set_html_content_type' );
 
-		$mail = wp_mail( $ad_email, 'Contact from website', $message, $headers);
+		$mail = wp_mail( $admin_email, 'Contact from website', $message, $headers);
 
 		if ( $mail ){
 			$msg = __('This is auto email from %s<br /> We have just received your message. Thank you for your time ', RAB_DOMAIN);

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: vi_Vi\n"
-"POT-Creation-Date: 2015-06-21 01:38+0700\n"
-"PO-Revision-Date: 2015-07-28 00:43+0700\n"
+"POT-Creation-Date: 2015-07-28 00:43+0700\n"
+"PO-Revision-Date: 2015-07-28 00:52+0700\n"
 "Last-Translator: dan <danng@gmail.com>\n"
 "Language-Team: rab <danhoat@gmail.com>\n"
 "Language: vi_VN\n"
@@ -150,103 +150,103 @@ msgstr ""
 msgid "Tagged :"
 msgstr ""
 
-#: functions.php:93
+#: functions.php:92
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:93
 msgid "Left Menu"
 msgstr ""
 
-#: functions.php:122
+#: functions.php:121
 msgid "This field is required"
 msgstr "Vui lòng không để rỗng"
 
-#: functions.php:123
+#: functions.php:122
 msgid "Please fix this field."
 msgstr ""
 
-#: functions.php:124
+#: functions.php:123
 msgid "Please enter a valid email address."
 msgstr "Email chưa đúng"
 
-#: functions.php:125
+#: functions.php:124
 msgid "Please enter a valid URL."
 msgstr ""
 
-#: functions.php:126
+#: functions.php:125
 msgid "Please enter a valid date."
 msgstr ""
 
-#: functions.php:127
+#: functions.php:126
 msgid "Please enter a valid date (ISO)."
 msgstr ""
 
-#: functions.php:128
+#: functions.php:127
 msgid "Please enter a valid number."
 msgstr ""
 
-#: functions.php:129
+#: functions.php:128
 msgid "Please enter only digits."
 msgstr ""
 
-#: functions.php:130
+#: functions.php:129
 msgid "Please enter a valid credit card number."
 msgstr ""
 
-#: functions.php:131
+#: functions.php:130
 msgid "Please enter the same value again."
 msgstr ""
 
-#: functions.php:132
+#: functions.php:131
 msgid "Please enter a value with a valid extension."
 msgstr ""
 
-#: functions.php:133
+#: functions.php:132
 msgid "Please enter no more than {0} characters."
 msgstr ""
 
-#: functions.php:134
+#: functions.php:133
 msgid "Please enter at least {0} characters."
 msgstr ""
 
-#: functions.php:135
+#: functions.php:134
 msgid "Please enter a value between {0} and {1} characters long."
 msgstr ""
 
-#: functions.php:136
+#: functions.php:135
 msgid "Please enter a value between {0} and {1}."
 msgstr ""
 
-#: functions.php:137
+#: functions.php:136
 msgid "Please enter a value less than or equal to {0}."
 msgstr ""
 
-#: functions.php:138
+#: functions.php:137
 msgid "Please enter a value greater than or equal to {0}."
 msgstr ""
 
-#: functions.php:198
+#: functions.php:197
 msgid "The user name field is required"
 msgstr "Vui lòng nhập họ tên"
 
-#: functions.php:199
+#: functions.php:198
 msgid "The email field is required"
 msgstr "Vui lòng nhập email"
 
-#: functions.php:200
+#: functions.php:199
 msgid "The content field is required"
 msgstr "Vui lòng nhập nội dung"
 
-#: functions.php:201
+#: functions.php:200
 msgid "The number phone field is required"
 msgstr "Vui lòng nhập số điện thoại"
 
-#: functions.php:320
+#: functions.php:319
 msgid "Read more"
 msgstr "Xem thêm"
 
-#: functions.php:349
+#: functions.php:348
 #, php-format
 msgid "Page %s"
 msgstr ""
@@ -337,11 +337,18 @@ msgstr ""
 msgid "Please enter your information"
 msgstr ""
 
-#: inc/rab_ajax_action.php:30
+#: inc/rab_ajax_action.php:35
+#, php-format
+msgid ""
+"This is auto email from %s<br /> We have just received your message. Thank "
+"you for your time "
+msgstr ""
+
+#: inc/rab_ajax_action.php:37
 msgid "Email has been sent successfull"
 msgstr "Gửi mail thành công"
 
-#: inc/rab_ajax_action.php:33
+#: inc/rab_ajax_action.php:40
 msgid "Send mail fail"
 msgstr "Gửi mail lỗi"
 
@@ -450,7 +457,8 @@ msgstr ""
 msgid "Facebook Fan Page"
 msgstr ""
 
-#: inc/widgets.php:106 inc/widgets.php:161 inc/widgets/post-slider.php:155
+#: inc/widgets.php:106 inc/widgets.php:161 inc/widgets/category-product.php:60
+#: inc/widgets/post-slider.php:152
 msgid "Title"
 msgstr ""
 
@@ -479,30 +487,31 @@ msgid "List Product categories"
 msgstr ""
 
 #: inc/widgets/post-slider.php:15
-msgid "Rap slider 1"
-msgstr ""
+#, fuzzy
+msgid "Post Slider"
+msgstr "Lưu"
 
-#: inc/widgets/post-slider.php:137
+#: inc/widgets/post-slider.php:134
 msgid "Select type effect"
 msgstr ""
 
-#: inc/widgets/post-slider.php:146
+#: inc/widgets/post-slider.php:143
 msgid "Select thumbnail size"
 msgstr ""
 
-#: inc/widgets/post-slider.php:149
+#: inc/widgets/post-slider.php:146
 msgid "Full"
 msgstr ""
 
-#: inc/widgets/post-slider.php:150
+#: inc/widgets/post-slider.php:147
 msgid "Thumbnail"
 msgstr ""
 
-#: inc/widgets/post-slider.php:157
+#: inc/widgets/post-slider.php:154
 msgid "Speed:"
 msgstr ""
 
-#: inc/widgets/post-slider.php:161
+#: inc/widgets/post-slider.php:158
 msgid "Show Nav"
 msgstr "Hiển thị thanh điều hướng"
 
@@ -514,51 +523,52 @@ msgstr ""
 msgid "Our Parner"
 msgstr "Đối tác của Nam Hà Phát"
 
-#: template/contact-form.php:5
+#: template/contact-form.php:4
 msgid "Your name: (*)"
 msgstr "Họ tên: (*)"
 
-#: template/contact-form.php:8
-msgid "your name"
+#: template/contact-form.php:7
+#, fuzzy
+msgid "Your name"
 msgstr "Tên của bạn"
 
-#: template/contact-form.php:13
+#: template/contact-form.php:12
 msgid "Address:"
 msgstr "Địa chỉ: "
 
-#: template/contact-form.php:16
+#: template/contact-form.php:15
 msgid "Your address"
 msgstr "Địa chỉ của bạn"
 
-#: template/contact-form.php:21
+#: template/contact-form.php:20
 msgid "Your phone number: (*)"
 msgstr "Điện thoại:(*)"
 
-#: template/contact-form.php:24
+#: template/contact-form.php:23
 msgid "Your phone number"
 msgstr "Điện thoại"
 
-#: template/contact-form.php:29
+#: template/contact-form.php:28
 msgid "Email: (*)"
 msgstr ""
 
-#: template/contact-form.php:32
+#: template/contact-form.php:31
 msgid "Your Email"
 msgstr "Email của bạn"
 
-#: template/contact-form.php:38
-msgid "Content: (*)"
-msgstr "Nội dung:(*)"
+#: template/contact-form.php:37
+msgid "Message: (*)"
+msgstr "Nội dung\" (*)"
 
-#: template/contact-form.php:41
-msgid "content"
-msgstr "Nội dung"
+#: template/contact-form.php:40
+msgid "Message"
+msgstr ""
 
-#: template/contact-form.php:49
+#: template/contact-form.php:48
 msgid "Sending..."
 msgstr "Đang gửi ..."
 
-#: template/contact-form.php:49
+#: template/contact-form.php:48
 msgid "Send"
 msgstr "Gửi"
 
@@ -583,6 +593,12 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+
+#~ msgid "Content: (*)"
+#~ msgstr "Nội dung:(*)"
+
+#~ msgid "content"
+#~ msgstr "Nội dung"
 
 #~ msgid "Where is the file?"
 #~ msgstr "Where is the file?"
