@@ -209,7 +209,7 @@ Class RAB_Site{
 
 	function rab_init_first(){
 
-		//load_textdomain(RAB_DOMAIN, get_template_directory().'/lang/vi_VI.mo');
+		load_textdomain(RAB_DOMAIN, get_template_directory().'/lang/vi_VI.mo');
 
 		rab_register_post_type();
 	}

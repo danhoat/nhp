@@ -45,7 +45,7 @@
         <div class="col-sm-9">
         </div>
         <div class="col-sm-2">
-            <button  type="submit" data-loading-text="<?php _e('Sending...',RAB_DOMAIN);?>" autocomplete="off"  class="btn btn btn-primary"><?php _e('Send',RAB_DOMAIN);?></button>
+            <button  type="submit" data-loading-text="<?php _e('Sending...',RAB_DOMAIN);?>" autocomplete="off"  class="btn btn btn-primary"> <?php _e('Send',RAB_DOMAIN);?></button>
         </div>
     </div>
 </form>
