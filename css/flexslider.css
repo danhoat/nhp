@@ -94,3 +94,8 @@ html[xmlns] .slides {display: block;}
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
 }
+.flexslider img.attachment-shop_thumbnail {
+    border: 3px solid;
+    border-radius: 5px;
+    max-height: 111px;
+}
