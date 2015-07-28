@@ -57,11 +57,6 @@ Class RAB_Settings extends RAB_Add_Menu_Backend{
 					</div>
 
 					<div class="form-item">
-						<label> <?php _e('Copyright footer',RAB_DOMAIN);?></label>
-					 	<textarea type="text"   class="option" name="rab_coppyright_text" /><?php echo stripslashes($rab_coppyright_text);?></textarea>
-					</div>
-
-					<div class="form-item">
 						<label><?php _e('Google Font For  Title',RAB_DOMAIN);?></label>
 
 						<?php		$google_fonts = ra_list_google_fonts();			?>
@@ -78,8 +73,15 @@ Class RAB_Settings extends RAB_Add_Menu_Backend{
 					</div>
 
 					<div class="form-item">
+						<label> <?php _e('Copyright footer',RAB_DOMAIN);?></label>
+					 	<textarea type="text"   class="option" name="rab_coppyright_text" /><?php echo stripslashes($rab_coppyright_text);?></textarea>
+					</div>
+
+
+
+					<div class="form-item">
 						<label><?php _e('Google Analytics Script', RAB_DOMAIN);?></label>
-					 	<textarea class="option" cols="36"  rows="10" name="<?php echo RAB_Option::RA_GOOLE_ANALYTIC;?>"><?php echo stripslashes($rab_google_analytic);?></textarea> 
+					 	<textarea class="option" cols="36"  rows="10" name="<?php echo RAB_Option::RA_GOOLE_ANALYTIC;?>"><?php echo stripslashes($rab_google_analytic);?></textarea>
 					</div>
 					<div class="form-item">
 						<button class="btn button"> <?php _e('Save',RAB_DOMAIN);?> </button>
