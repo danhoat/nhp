@@ -9,21 +9,24 @@
 	  	</head>
   	<body <?php body_class();?>>
         <div class="row full-row top-row">
-            <div class="container">
+
+            <div class="container ">
                 <div class="row">
                     <div class="col-lg-12">
-                      <?php if (  get_header_image()  != '' ) { ?>
-                        <a href="<?php echo home_url();?>">    <img src="<?php echo get_header_image() ; ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" /> </a>
+                        <a class="right-off-canvas-toggle menu-icon mobile-toggle" href="#off-canvas-navigation" aria-expanded="false"><span>Menu</span></a>
+                        <?php if (  get_header_image()  != '' ) { ?>
+                            <a href="<?php echo home_url();?>">    <img src="<?php echo get_header_image() ; ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" /> </a>
                       <?php } ?>
                     </div>
                 </div>
 
           	</div>
         </div>
-         <nav class="menu-main">
+        <nav class="menu-main">
 
            <div class="container">
-                   <?php wp_nav_menu(array( 'theme_location' => apply_filters( RAB_DOMAIN, 'main_menu' ) ,'menu_class' => 'main-menu' ,'container_class' => 'menu-main-menu-container' ));?>
+
+                <?php wp_nav_menu(array( 'theme_location' => apply_filters( RAB_DOMAIN, 'main_menu' ) ,'menu_class' => 'main-menu' ,'container_class' => 'menu-main-menu-container' ));?>
            </div>
 
         </nav>

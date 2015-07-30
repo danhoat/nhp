@@ -57,6 +57,8 @@ Class RAB_Site{
 
 		$this->add_action( 'widgets_init', 'rab_widgets_init' );
 		$this->add_filter( 'post_thumbnail_html', 'rab_thumbnail_html', 10, 3 );
+		$this->add_filter( 'wp_nav_menu_items', 'rab_custom_menu_item', 10, 2 );
+		$this->add_filter( 'pre_wp_nav_menu', 'rab_custom_pre_menu_item', 10, 2 );
 
 		/**
 		 * Filter content
@@ -180,17 +182,20 @@ Class RAB_Site{
 		wp_register_script( 'front',TEMPLATEURL.'/js/front.js', array('jquery','jquery.validation'), RAB_VERSION, true);
 		wp_register_script( 'demo',TEMPLATEURL.'/js/demo.js',array('jquery','jquery.flexslider'));
 		wp_register_style( 'flex.slider',TEMPLATEURL.'/css/flexslider.css');
+		
 
 		/**
 		 * BOOTSTRAP JAVASCRIPT
 		 */
 		wp_register_script( 'bootstrap-js',get_stylesheet_directory_uri().'/bootstrap/js/bootstrap.min.js');
 		wp_register_script( 'bootstrap-button-js',get_stylesheet_directory_uri().'/bootstrap/js/bootstrap.min.js', array('bootstrap-js'));
-
+		wp_register_script( 'jquery-ui','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js');
 		//END BOOTSTRAP
 		wp_enqueue_style( 'rab-style', get_stylesheet_uri() );
 		wp_enqueue_script( 'jquery.validatio');
-		wp_enqueue_script( 'front');
+		wp_enqueue_script( 'jquery-ui');
+		
+		wp_enqueue_script( 'front', array('jQuery','jquery-ui') );
 		wp_localize_script( 'front','rab_global',
 			array(
 				'ajaxUrl' 	=> admin_url( 'admin-ajax.php' ),
@@ -220,6 +225,15 @@ Class RAB_Site{
 	}
 
 	function rab_init_thirst(){
+
+	}
+	function rab_custom_pre_menu_item(){
+
+	}
+	function rab_custom_menu_item ( $items, $args ) {
+
+        $items .= '<li>Show whatever test</li>';
+	    return $items;
 
 	}
 	/**
@@ -330,7 +344,7 @@ Class RAB_Site{
 	 * @return  title text
 	 */
 	function ra_wp_title( $title, $sep ) {
-	
+
 	global $paged, $page;
 
 	if ( is_feed() )

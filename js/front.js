@@ -1,5 +1,20 @@
 (function($){
 
+	jQuery(document).ready(function(){
+		$(".mobile-toggle").click(function(){
+
+			var display = $(".menu-main-menu-container").css('display');
+			console.log( display);
+			if ( display == 'none'){
+
+			  	$(".menu-main-menu-container").show("slide", { direction: "left" }, 1000);
+        		$(".menu-main-menu-container").parent().siblings(":visible").hide("slide", { direction: "left" }, 1000);
+			}else{
+				console.log(' begin hide');
+				$('.menu-main-menu-container').hide("slide", { direction: "right" }, 1200);
+			}
+		})
+	});
 	function showNotification(params) {
 
             // remove existing notification
@@ -60,7 +75,6 @@
 
 			return false;
 		})
-
-
 	});
+
 })(jQuery);
