@@ -1,20 +1,21 @@
 (function($){
 
-	// jQuery(document).ready(function(){
-	// 	$(".mobile-toggle").click(function(){
+	jQuery(document).ready(function(){
+		$("body").click(function(ev){
 
-	// 		var display = $(".menu-main-menu-container").css('display');
-	// 		console.log( display);
-	// 		if ( display == 'none'){
+			var width_menu = $("#cbp-spmenu-s1").width();
 
-	// 		  	$(".menu-main-menu-container").show("slide", { direction: "left" }, 1000);
- //        		//$(".menu-main-menu-container").parent().siblings(":visible").hide("slide", { direction: "left" }, 1000);
-	// 		}else{
-	// 			console.log(' begin hide');
-	// 			$('.menu-main-menu-container').hide("slide", { direction: "left" }, 1200);
-	// 		}
-	// 	})
-	// });
+			var offset = $( this ).offset();
+  			ev.stopPropagation();
+
+  			var pos = ev.pageX ;
+  			if(pos > width_menu){
+  				// hide menu here
+  				$("#showLeft").trigger("click");
+  			}
+
+		})
+	});
 	function showNotification(params) {
 
             // remove existing notification
@@ -86,11 +87,11 @@
 		menuTop = document.getElementById( 'cbp-spmenu-s3' ),
 		menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
 		showLeft = document.getElementById( 'showLeft' ),
-		showRight = document.getElementById( 'showRight' ),
-		showTop = document.getElementById( 'showTop' ),
-		showBottom = document.getElementById( 'showBottom' ),
-		showLeftPush = document.getElementById( 'showLeftPush' ),
-		showRightPush = document.getElementById( 'showRightPush' ),
+		// //showRight = document.getElementById( 'showRight' ),
+		// showTop = document.getElementById( 'showTop' ),
+		// showBottom = document.getElementById( 'showBottom' ),
+		// showLeftPush = document.getElementById( 'showLeftPush' ),
+		// showRightPush = document.getElementById( 'showRightPush' ),
 		body = document.body;
 
 	showLeft.onclick = function() {
@@ -98,52 +99,52 @@
 		classie.toggle( menuLeft, 'cbp-spmenu-open' );
 		disableOther( 'showLeft' );
 	};
-	showRight.onclick = function() {
-		classie.toggle( this, 'active' );
-		classie.toggle( menuRight, 'cbp-spmenu-open' );
-		disableOther( 'showRight' );
-	};
-	showTop.onclick = function() {
-		classie.toggle( this, 'active' );
-		classie.toggle( menuTop, 'cbp-spmenu-open' );
-		disableOther( 'showTop' );
-	};
-	showBottom.onclick = function() {
-		classie.toggle( this, 'active' );
-		classie.toggle( menuBottom, 'cbp-spmenu-open' );
-		disableOther( 'showBottom' );
-	};
-	showLeftPush.onclick = function() {
-		classie.toggle( this, 'active' );
-		classie.toggle( body, 'cbp-spmenu-push-toright' );
-		classie.toggle( menuLeft, 'cbp-spmenu-open' );
-		disableOther( 'showLeftPush' );
-	};
-	showRightPush.onclick = function() {
-		classie.toggle( this, 'active' );
-		classie.toggle( body, 'cbp-spmenu-push-toleft' );
-		classie.toggle( menuRight, 'cbp-spmenu-open' );
-		disableOther( 'showRightPush' );
-	};
+	// showRight.onclick = function() {
+	// 	classie.toggle( this, 'active' );
+	// 	classie.toggle( menuRight, 'cbp-spmenu-open' );
+	// 	disableOther( 'showRight' );
+	// };
+	// showTop.onclick = function() {
+	// 	classie.toggle( this, 'active' );
+	// 	classie.toggle( menuTop, 'cbp-spmenu-open' );
+	// 	disableOther( 'showTop' );
+	// };
+	// showBottom.onclick = function() {
+	// 	classie.toggle( this, 'active' );
+	// 	classie.toggle( menuBottom, 'cbp-spmenu-open' );
+	// 	disableOther( 'showBottom' );
+	// };
+	// showLeftPush.onclick = function() {
+	// 	classie.toggle( this, 'active' );
+	// 	classie.toggle( body, 'cbp-spmenu-push-toright' );
+	// 	classie.toggle( menuLeft, 'cbp-spmenu-open' );
+	// 	disableOther( 'showLeftPush' );
+	// };
+	// showRightPush.onclick = function() {
+	// 	classie.toggle( this, 'active' );
+	// 	classie.toggle( body, 'cbp-spmenu-push-toleft' );
+	// 	classie.toggle( menuRight, 'cbp-spmenu-open' );
+	// 	disableOther( 'showRightPush' );
+	// };
 
 	function disableOther( button ) {
 		if( button !== 'showLeft' ) {
 			classie.toggle( showLeft, 'disabled' );
 		}
-		if( button !== 'showRight' ) {
-			classie.toggle( showRight, 'disabled' );
-		}
-		if( button !== 'showTop' ) {
-			classie.toggle( showTop, 'disabled' );
-		}
-		if( button !== 'showBottom' ) {
-			classie.toggle( showBottom, 'disabled' );
-		}
-		if( button !== 'showLeftPush' ) {
-			classie.toggle( showLeftPush, 'disabled' );
-		}
-		if( button !== 'showRightPush' ) {
-			classie.toggle( showRightPush, 'disabled' );
-		}
+		// if( button !== 'showRight' ) {
+		// 	classie.toggle( showRight, 'disabled' );
+		// }
+		// if( button !== 'showTop' ) {
+		// 	classie.toggle( showTop, 'disabled' );
+		// }
+		// if( button !== 'showBottom' ) {
+		// 	classie.toggle( showBottom, 'disabled' );
+		// }
+		// if( button !== 'showLeftPush' ) {
+		// 	classie.toggle( showLeftPush, 'disabled' );
+		// }
+		// if( button !== 'showRightPush' ) {
+		// 	classie.toggle( showRightPush, 'disabled' );
+		// }
 	}
 })(jQuery);

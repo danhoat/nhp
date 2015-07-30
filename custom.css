@@ -167,10 +167,12 @@ ul, ol {
 }
 #showLeft{
   display: none;
+  border: medium none;
+  background: none;
 }
-
+@media (max-width: 909px) {
   #showLeft{
-    display: block;
+    display: inline-block;
   }
   .home .block-menu-category {
     position: absolute;

@@ -57,7 +57,7 @@ Class RAB_Site{
 
 		$this->add_action( 'widgets_init', 'rab_widgets_init' );
 		$this->add_filter( 'post_thumbnail_html', 'rab_thumbnail_html', 10, 3 );
-		$this->add_filter( 'wp_nav_menu_items', 'rab_custom_menu_item', 10, 2 );
+		//$this->add_filter( 'wp_nav_menu_items', 'rab_custom_menu_item', 10, 2 );
 		$this->add_filter( 'pre_wp_nav_menu', 'rab_custom_pre_menu_item', 10, 2 );
 
 		/**
