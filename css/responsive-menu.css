@@ -1,4 +1,8 @@
 @media (max-width: 992px) {
+	.menu-main .container{
+		margin: 0;
+		padding: 0;
+	}
 	.cbp-spmenu {
 		background: #47a3da;
 		position: fixed;
