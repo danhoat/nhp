@@ -11,6 +11,13 @@ img{
 h1{
 	font-size: 20px;
 }
+body {
+    background-color: #f5f5f5;
+    color: #3e474b;
+    font-size: 14px;
+    line-height: 1.42857;
+    text-rendering: geometricprecision;
+}
 .title, .archive-title{
 	font-family: 'PT Sans Narrow',sans-serif;
 	text-transform: uppercase;
@@ -27,19 +34,107 @@ h1{
 	max-width: 1170px;
 	padding: 0 15px;
 }
+.main-sidebar  .flex-direction-nav a{
+    top: 33%;
+}
 
 /** Custom menu bootraps **/
-.navbar {
-	clear: both;
-}
-.navbar .nav > li {
-    float: left;
-}
 
+/* -------------------------------- |*/
+/* START MENU
+/* ---------------------------------| */
+
+
+nav ul.main-menu {
+  padding: 0;
+  margin: 0;
+}
+.menu-main {
+    border-bottom: 1px solid #eb911f;
+}
+nav ul.main-menu li{
+  list-style: none;
+  display: inline-block;
+}
+.menu-main .menu-main-menu-container li a {
+    background-color: transparent !important;
+    border-right: 1px solid #ebeef2;
+    color: #353d41;
+    display: block;
+    font-weight: 400;
+    padding: 15px 30px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu-main .menu-main-menu-container li a:hover,
+.menu-main li.current-menu-item a{
+color: #eb911f;
+}
 /* -------------------------------- |*/
 /* END MENU
 /* ---------------------------------| */
+.footer-site {
+    background: #333333 none repeat scroll 0 0;
+    color: #f6f6f6;
+    font-weight: 400;
+}
 
+.main-sidebar .widget-title, .main-title {
+    background-color: #eb911f;
+    border: medium none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin-bottom: 1px;
+    margin-top: 0;
+    padding: 9px 15px;
+    position: relative;
+    text-transform: uppercase;
+
+}
+.main-sidebar  .widget{
+    margin-bottom: 10px;
+}
+.main-sidebar  .rab_slider .flexslider{
+    padding-bottom: 15px;
+}
+.main-page .entry-title {
+    border-bottom: 2px solid #fc6346;
+    color: #fc6346;
+    font-size: 17px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.main-sidebar {
+    padding-right: 0;
+}
+.main-page .entry-page {
+    background-color: white;
+    border: 0 solid #efefef;
+    display: block;
+    line-height: 23px;
+    padding: 0;
+    text-align: justify;
+    width: 100%;
+    min-height: 350px;
+}
+.title, .archive-title {
+    border-bottom: 1px solid #ff6f00;
+    color: #ff6f00;
+    font-size: 16px;
+    margin-top: 0;
+    padding: 7px 15px 7px 0;
+    text-transform: uppercase;
+}
+.product-title {
+    font-size: 16px;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
 /*------------------------ */
 /* Category Product menu */
 ul, ol {

@@ -221,5 +221,6 @@
 	}
 	div.menu-main-menu-container ul li{
 	  list-style: none;
+	  display: block !important;
 	}
 }

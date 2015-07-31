@@ -199,12 +199,13 @@ Class RAB_Site{
 		wp_enqueue_script( 'classie');
 		wp_enqueue_style( 'rab-style', get_stylesheet_uri() );
 		wp_enqueue_style( 'res.menu' );
+		wp_enqueue_style( 'flex.slider' );
 		wp_enqueue_script( 'jquery.validatio');
-		wp_enqueue_script( 'jquery-ui');
+		//wp_enqueue_script( 'jquery-ui');
 
 
 
-		wp_enqueue_script( 'front', array('jQuery','jquery-ui', 'classie') );
+		wp_enqueue_script( 'front', array('jQuery', 'classie' ) );
 		wp_localize_script( 'front','rab_global',
 			array(
 				'ajaxUrl' 	=> admin_url( 'admin-ajax.php' ),
