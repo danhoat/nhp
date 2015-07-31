@@ -1,4 +1,24 @@
+#showLeft {
+    display: none;
+    border: medium none;
+    background: none;
+    position: relative;
+    top: 10px;
+
+}
 @media (max-width: 992px) {
+	 #showLeft {
+        display: inline-block;
+    }
+    .home .block-menu-category {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        z-index: 9999;
+        min-width: 260px;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
 	.menu-main .container{
 		margin: 0;
 		padding: 0;
@@ -204,6 +224,7 @@
 
 	.top-row .col-lg-12 a{
 	  display: inline-block;
+	  float: right;
 	}
 	.top-row .col-lg-12{
 	  background: #ff6f00;
@@ -222,5 +243,8 @@
 	div.menu-main-menu-container ul li{
 	  list-style: none;
 	  display: block !important;
+	}
+	body.admin-bar .menu-main{
+		top:45px;
 	}
 }

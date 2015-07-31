@@ -1,6 +1,7 @@
 (function($){
 
 	jQuery(document).ready(function(){
+
 		$("body").click(function(ev){
 
 			var width_menu = $("#cbp-spmenu-s1").width();
@@ -82,6 +83,7 @@
 })(jQuery);
 
 (function($){
+
 	var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 		menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 		menuTop = document.getElementById( 'cbp-spmenu-s3' ),
