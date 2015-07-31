@@ -60,12 +60,7 @@ body .form-group input.form-control{
 body .form-group  textarea{
 	border-radius: 3px;
 }
-.block-partner h3{
-	font-size1: 15px;
-}
-.block-partner .col-xs-12{
-	text-align: center;
-}
+
 div.full-row{
 	margin: 0 !important;
 }
@@ -81,7 +76,7 @@ div.top-row .row{
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	
+
 }
 
 
@@ -95,11 +90,11 @@ div.top-row .row{
 
 /* BULLET STYLE */
 .tp-bullets.simplebullets.miami-light 				{ 	height:9px; vertical-align:middle; line-height:10px }
-.tp-bullets.simplebullets.miami-light .bullet 		{	cursor:pointer;width: 9px; height: 9px;background: #aaa; float: left; position: relative; margin-right: 7px; border-radius:50%; -webkit-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  
+.tp-bullets.simplebullets.miami-light .bullet 		{	cursor:pointer;width: 9px; height: 9px;background: #aaa; float: left; position: relative; margin-right: 7px; border-radius:50%; -webkit-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
 }
 .tp-bullets.simplebullets.miami-light .bullet.selected,
-.tp-bullets.simplebullets.miami-light .bullet:hover	{	background: #fff; 	
+.tp-bullets.simplebullets.miami-light .bullet:hover	{	background: #fff;
 -webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.5);
 -moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.5);
 box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.5);}

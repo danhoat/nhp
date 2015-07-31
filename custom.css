@@ -8,6 +8,12 @@ img{
 	max-width: 100%;
 	overflow: hidden;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 h1{
 	font-size: 20px;
 }
@@ -21,11 +27,11 @@ body {
 .title, .archive-title{
 	font-family: 'PT Sans Narrow',sans-serif;
 	text-transform: uppercase;
-	 border-bottom: 1px solid #ff6f00;
-   margin-top: 0;
-   padding: 7px 15px;
-   color: #ff6f00;
-   font-size: 16px;
+	border-bottom: 1px solid #ff6f00;
+    margin-top: 0;
+    padding: 7px 15px;
+    color: #ff6f00;
+    font-size: 16px;
 }
 .post-title, .post-title a, .title, .title a{
 	text-align: justify;
@@ -36,6 +42,13 @@ body {
 }
 .main-sidebar  .flex-direction-nav a{
     top: 33%;
+}
+a.post-thumbnail {
+    display: block;
+    overflow: hidden;
+}
+.main-page a {
+    color: #ff6f00;
 }
 
 /** Custom menu bootraps **/
@@ -79,12 +92,24 @@ color: #eb911f;
     color: #f6f6f6;
     font-weight: 400;
 }
-
+h1{
+    font-size: 16px;
+}
+h3, h5, .h5{
+    font-size: 13px;
+}
+.block-partner h3{
+    font-size: 13px;
+    color: #fff;
+    text-indent: 10px;
+}
+.block-partner .col-xs-12{
+    text-align: center;
+}
 .main-sidebar .widget-title, .main-title {
     background-color: #eb911f;
     border: medium none;
     color: #fff;
-    font-size: 13px;
     font-weight: bold;
     letter-spacing: normal;
     margin-bottom: 1px;
@@ -124,7 +149,7 @@ color: #eb911f;
 .title, .archive-title {
     border-bottom: 1px solid #ff6f00;
     color: #ff6f00;
-    font-size: 16px;
+
     margin-top: 0;
     padding: 7px 15px 7px 0;
     text-transform: uppercase;
@@ -135,6 +160,50 @@ color: #eb911f;
     text-align: center;
     text-transform: uppercase;
 }
+
+     .main-sidebar .widget_nav_menu {
+        position: relative;
+        top: 0;
+        z-index: 9999;
+        min-width: 260px;
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+      .col-left-product{
+        margin-left: 0;
+        padding-left: 0;
+      }
+      .col-right-product {
+        margin-right: 0;
+        padding-right: 0;
+      }
+      .col-center-product{
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+      }
+      .item-product{
+        padding-top: 0;
+
+      }
+    .form-group .col-sm-2 {
+        text-align: right;
+    }
+    .form-group label.error{
+        font-size: 12px;
+        font-weight: normal;
+        bottom: -11px;
+        position: absolute;
+        color: red;
+        font-style:italic;
+    }
+    .item-product .post-thumbnail img{
+        transition: all 2.75s cubic-bezier(0, 0.83, 0.17, 1) 0s;
+        width: 100%;
+    }
+    .item-product img:hover{
+        transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+        opacity: 1;
+    }
 /*------------------------ */
 /* Category Product menu */
 ul, ol {
