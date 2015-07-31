@@ -138,26 +138,29 @@ Class RAB_Site{
 					    max: jQuery.validator.format("<?php _e("Please enter a value less than or equal to {0}." ,RAB_DOMAIN); ?>"),
 					    min: jQuery.validator.format("<?php _e("Please enter a value greater than or equal to {0}.", RAB_DOMAIN); ?>")
 					});
+				<?php if( is_singular('product') ){ ?>
+
 
 					$(window).load(function() {
 					  // The slider being synced must be initialized first
-					  $('#carousel').flexslider({
-					    animation: "slide",
-					    controlNav: false,
-					    animationLoop: false,
-					    slideshow: false,
-					    itemWidth: 195,
-					    itemMargin: 0,
-					    asNavFor: '#slider'
-					  });
-					  $('#slider').flexslider({
-					    animation: "slide",
-					    controlNav: false,
-					    animationLoop: false,
-					    slideshow: false,
-					    sync: "#carousel"
-					  });
+					  	$('#carousel').flexslider({
+						    animation: "slide",
+						    controlNav: false,
+						    animationLoop: false,
+						    slideshow: false,
+						    itemWidth: 195,
+						    itemMargin: 0,
+						    asNavFor: '#slider'
+					  	});
+					  	$('#slider').flexslider({
+						    animation: "slide",
+						    controlNav: false,
+						    animationLoop: false,
+						    slideshow: false,
+						    sync: "#carousel"
+					  	});
 					});
+				<?php } ?>
 
 				})
 

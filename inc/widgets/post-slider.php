@@ -49,17 +49,20 @@ class RAB_Slider_Widget extends WP_Widget {
 								$nav = (isset($nav) && $nav==1) ? 'true' : 'false';
 								$class = '.slider-'.$key;
 								?>
-						 		$('<?php echo $class;?>').flexslider({
-					              	animation: '<?php echo $effect;?>',
-					              	animationSpeed:<?php echo $widget['speed'];?>,
-					              	animationLoop: true,
-					              	itemWidth: '100%',
-					              	slideshowSpeed : 5000,
-					              	itemMargin: 0,
-					                controlNav: <?php echo $nav;?>,
-					                slideshow: true,
+								var target  = $('<?php echo $class;?>');
+								if ( target.lenth > 1 && jQuery.isFunction('flexslider') && typeof flexslider  != 'undefined') {
+							 		$('<?php echo $class;?>').flexslider({
+						              	animation: '<?php echo $effect;?>',
+						              	animationSpeed:<?php echo $widget['speed'];?>,
+						              	animationLoop: true,
+						              	itemWidth: '100%',
+						              	slideshowSpeed : 5000,
+						              	itemMargin: 0,
+						                controlNav: <?php echo $nav;?>,
+						                slideshow: true,
 
-					            });
+						            });
+							 	}
 				            <?php
 							}
 						?>
@@ -97,9 +100,9 @@ class RAB_Slider_Widget extends WP_Widget {
 					while(have_posts()){
 						the_post();
 						echo '<li>';
-						echo '<h5 class="widget-title">'.get_the_title().'</h5>';
-						rab_post_thumbnail('medium');
-						echo get_the_excerpt();
+							echo '<h5 class="widget-title">'.get_the_title().'</h5>';
+							rab_post_thumbnail('medium');
+							echo get_the_excerpt();
 						echo'</li>';
 					}
 					echo '</ul>';
