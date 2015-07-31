@@ -202,8 +202,6 @@ Class RAB_Site{
 		wp_enqueue_script( 'jquery.validatio');
 		//wp_enqueue_script( 'jquery-ui');
 
-
-
 		wp_enqueue_script( 'front', array('jQuery', 'classie' ) );
 		wp_localize_script( 'front','rab_global',
 			array(
