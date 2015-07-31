@@ -1,0 +1,10 @@
+@media screen and (max-device-width: 640px) {
+    /* some CSS here */
+    .form-group label.error {
+        position: relative;
+        bottom: 0;
+    }
+    .form-group .col-sm-2 {
+        text-align: left;
+    }
+}
