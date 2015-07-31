@@ -21,7 +21,6 @@ if(is_admin()){
 	require get_template_directory() . '/admin/admin.php';
 }
 
-
 Class RAB_Site{
 
 	protected $options = null;
