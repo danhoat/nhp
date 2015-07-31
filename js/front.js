@@ -4,13 +4,13 @@
 
 		$("body").click(function(ev){
 
-			var width_menu = $("#cbp-spmenu-s1").width();
-
-			var offset = $( this ).offset();
+			var width_menu 	= $("#cbp-spmenu-s1").width();
+			var left 	 	=  $("#cbp-spmenu-s1").css('left');
+			var offset 		= $( this ).offset();
   			ev.stopPropagation();
-
+  			console.log(left);
   			var pos = ev.pageX ;
-  			if(pos > width_menu){
+  			if(pos > width_menu && left != '-190px'){
   				// hide menu here
   				$("#showLeft").trigger("click");
   			}

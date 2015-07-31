@@ -185,11 +185,15 @@ Class RAB_Site{
 		wp_register_script( 'demo',TEMPLATEURL.'/js/demo.js',array('jquery','jquery.flexslider'));
 		wp_register_script( 'classie',TEMPLATEURL.'/js/classie.js',array('jquery')); //mobile menu
 
-
-
+		wp_register_style( 'screen.mobile', TEMPLATEURL.'/css/mobile-screen.css');
 		wp_register_style( 'flex.slider',TEMPLATEURL.'/css/flexslider.css');
 		wp_register_style( 'res.menu',TEMPLATEURL.'/css/responsive-menu.css');
 
+		wp_enqueue_style('bootraps-css', get_stylesheet_directory_uri().'/bootstrap/css/bootstrap.css');
+		wp_enqueue_style('bootraps-grid', get_stylesheet_directory_uri().'/bootstrap/css/grid.css');
+		wp_enqueue_style('front-rab', get_stylesheet_directory_uri().'/font/css/font-awesome.min.css');
+		wp_enqueue_style('rab-style-custom', get_stylesheet_directory_uri().'/custom.css');
+		wp_enqueue_style('rab-style-clone', get_stylesheet_directory_uri().'/css/clone.css');
 		/**
 		 * BOOTSTRAP JAVASCRIPT
 		 */
@@ -198,13 +202,15 @@ Class RAB_Site{
 		wp_register_script( 'bootstrap-button-js',get_stylesheet_directory_uri().'/bootstrap/js/bootstrap.min.js', array('bootstrap-js'));
 		wp_register_script( 'jquery-ui','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js');
 		//END BOOTSTRAP
-		wp_enqueue_script( 'classie');
+
 		wp_enqueue_style( 'rab-style', get_stylesheet_uri() );
 		wp_enqueue_style( 'res.menu' );
+		wp_enqueue_style( 'screen.mobile' );
 		wp_enqueue_style( 'flex.slider' );
 		wp_enqueue_script( 'jquery.validatio');
 		//wp_enqueue_script( 'jquery-ui');
 
+		wp_enqueue_script( 'classie');
 		wp_enqueue_script( 'front', array('jQuery', 'classie' ) );
 		wp_localize_script( 'front','rab_global',
 			array(
@@ -287,11 +293,7 @@ Class RAB_Site{
 			</style>
 		<?php
 
-			wp_enqueue_style('bootraps-css', get_stylesheet_directory_uri().'/bootstrap/css/bootstrap.css');
-			wp_enqueue_style('bootraps-grid', get_stylesheet_directory_uri().'/bootstrap/css/grid.css');
-			wp_enqueue_style('front-rab', get_stylesheet_directory_uri().'/font/css/font-awesome.min.css');
-			wp_enqueue_style('rab-style-custom', get_stylesheet_directory_uri().'/custom.css');
-			wp_enqueue_style('rab-style-clone', get_stylesheet_directory_uri().'/css/clone.css');
+
 	}
 	public function rab_wp_footer(){
 		wp_enqueue_script('jquery.ajax');
