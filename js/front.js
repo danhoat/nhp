@@ -4,15 +4,18 @@
 
 		$("body").click(function(ev){
 
-			var width_menu 	= $("#cbp-spmenu-s1").width();
-			var left 	 	=  $("#cbp-spmenu-s1").css('left');
+			var full 		= $("body").width();
+			var width_menu 	= $("#cbp-spmenu-s2").width();
+			var right 	 	=  $("#cbp-spmenu-s2").css('right');
 			var offset 		= $( this ).offset();
   			ev.stopPropagation();
-  			console.log(left);
+  			console.log(right);
   			var pos = ev.pageX ;
-  			if(pos > width_menu && left != '-190px'){
+  			console.log(pos);
+  			console.log(width_menu);
+  			if(full - pos > width_menu && right != '-190px'){
   				// hide menu here
-  				$("#showLeft").trigger("click");
+  				$("#showRight").trigger("click");
   			}
 
 		})
@@ -88,24 +91,24 @@
 		menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 		menuTop = document.getElementById( 'cbp-spmenu-s3' ),
 		menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
-		showLeft = document.getElementById( 'showLeft' ),
-		// //showRight = document.getElementById( 'showRight' ),
+		//showLeft = document.getElementById( 'showLeft' ),
+		showRight = document.getElementById( 'showRight' ),
 		// showTop = document.getElementById( 'showTop' ),
 		// showBottom = document.getElementById( 'showBottom' ),
 		// showLeftPush = document.getElementById( 'showLeftPush' ),
 		// showRightPush = document.getElementById( 'showRightPush' ),
 		body = document.body;
 
-	showLeft.onclick = function() {
-		classie.toggle( this, 'active' );
-		classie.toggle( menuLeft, 'cbp-spmenu-open' );
-		disableOther( 'showLeft' );
-	};
-	// showRight.onclick = function() {
+	// showLeft.onclick = function() {
 	// 	classie.toggle( this, 'active' );
-	// 	classie.toggle( menuRight, 'cbp-spmenu-open' );
-	// 	disableOther( 'showRight' );
+	// 	classie.toggle( menuLeft, 'cbp-spmenu-open' );
+	// 	disableOther( 'showLeft' );
 	// };
+	showRight.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( menuRight, 'cbp-spmenu-open' );
+		disableOther( 'showRight' );
+	};
 	// showTop.onclick = function() {
 	// 	classie.toggle( this, 'active' );
 	// 	classie.toggle( menuTop, 'cbp-spmenu-open' );
@@ -130,12 +133,12 @@
 	// };
 
 	function disableOther( button ) {
-		if( button !== 'showLeft' ) {
-			classie.toggle( showLeft, 'disabled' );
-		}
-		// if( button !== 'showRight' ) {
-		// 	classie.toggle( showRight, 'disabled' );
+		// if( button !== 'showLeft' ) {
+		// 	classie.toggle( showLeft, 'disabled' );
 		// }
+		if( button !== 'showRight' ) {
+			classie.toggle( showRight, 'disabled' );
+		}
 		// if( button !== 'showTop' ) {
 		// 	classie.toggle( showTop, 'disabled' );
 		// }
