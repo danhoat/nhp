@@ -1,13 +1,14 @@
-#showLeft {
+#showRight {
     display: none;
     border: medium none;
     background: none;
-    position: relative;
+    position: absolute;
     top: 10px;
+    right: 0;
 
 }
 @media (max-width: 992px) {
-	 #showLeft {
+	 #showRight {
         display: inline-block;
     }
     .home .block-menu-category {
@@ -224,7 +225,7 @@
 
 	.top-row .col-lg-12 a{
 	  display: inline-block;
-	  float: right;
+	  float: left;
 	}
 	.top-row .col-lg-12{
 	  background: #ff6f00;
