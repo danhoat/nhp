@@ -1,18 +1,20 @@
 (function($){
 
 	jQuery(document).ready(function(){
-
+		/**
+		 * check mobile menu and toggle appearance.
+		 */
 		$("body").click(function(ev){
 
+  			ev.stopPropagation();
 			var full 		= $("body").width();
 			var width_menu 	= $("#cbp-spmenu-s2").width();
 			var right 	 	=  $("#cbp-spmenu-s2").css('right');
 			var offset 		= $( this ).offset();
-  			ev.stopPropagation();
-  			console.log(right);
+
+
   			var pos = ev.pageX ;
-  			console.log(pos);
-  			console.log(width_menu);
+
   			if(full - pos > width_menu && right != '-190px'){
   				// hide menu here
   				$("#showRight").trigger("click");
@@ -20,6 +22,7 @@
 
 		})
 	});
+
 	function showNotification(params) {
 
             // remove existing notification
