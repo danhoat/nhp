@@ -22,6 +22,7 @@ class RAB_Slider_Widget extends WP_Widget {
 	 * @return [type] [description]
 	 */
 	function extract_value_to_js(){
+
 		//get setting in widgets;
 		$settings = $this->get_settings();
 
