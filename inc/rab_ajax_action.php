@@ -24,6 +24,7 @@
 		);
 		$subject 	= sprintf(__('Contact From %s',RAB_DOMAIN ), get_option('blogname') );
 		$mail = ra_mailing( $admin_email, $subject, $message, $headers);
+		//Your inquiry has been received. We will respond to you as soon as possible.
 
 		if ( $mail ){
 

@@ -12,13 +12,16 @@
             <div class="entry-page">
                 <header class="archive-header">
                     <h1 class="archive-title title"><?php echo single_cat_title( '', false ); ?></h1>
-
                     <?php
-                        // Show an optional term description.
-                        $term_description = term_description();
-                        if ( ! empty( $term_description ) ) :
-                            printf( '<div class="taxonomy-description col-lg-12">%s</div>', $term_description );
-                        endif;
+                        global  $cat;
+                        $term = get_queried_object();
+                    ?>
+                    <?php if ( category_description() ) : // Show an optional category description ?>
+                        <div class="archive-meta"><?php echo category_description(); ?></div>
+                    <?php endif; ?>
+                    <?php
+                        if ( current_user_can ( 'manage_options') )
+                        echo '<a href="'.admin_url('edit-tags.php?action=edit&taxonomy='.$term->taxonomy.'&tag_ID='.$term->term_id.'&post_type=post').'" >'.__('Edit',RAB_DOMAIN).'</a>';
                     ?>
                 </header><!-- .archive-header -->
 
