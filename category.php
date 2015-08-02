@@ -10,14 +10,14 @@
         <?php get_sidebar();?>
         <div class="col-lg-9 main-content">
             <div class="entry-page">
-                <header class="archive-header">
+                <header class="archive-header ">
                     <h1 class="archive-title title"><?php echo single_cat_title( '', false ); ?></h1>
                     <?php
                         global  $cat;
                         $term = get_queried_object();
                     ?>
                     <?php if ( category_description() ) : // Show an optional category description ?>
-                        <div class="archive-meta"><?php echo category_description(); ?></div>
+                        <div class="archive-meta col-lg-12"><?php echo category_description(); ?></div>
                     <?php endif; ?>
                     <?php
                         if ( current_user_can ( 'manage_options') )

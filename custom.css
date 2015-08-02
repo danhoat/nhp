@@ -171,9 +171,9 @@ h3, h5, .h5 {
 .main-page .entry-page {
     background-color: white;
     border: 0 solid #efefef;
-    display: block;
+    display: table;
     line-height: 23px;
-    padding: 0;
+    padding: 0 20px 0 0;
     text-align: justify;
     width: 100%;
     min-height: 350px;
