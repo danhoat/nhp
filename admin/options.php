@@ -75,7 +75,6 @@ class RAB_Option{
 		$resp = array('success' => true,'msg' => __('Save option success',RAB_DOMAIN));
 		wp_send_json($resp);
 	}
-	
 
 	function get_options_sites(){
 		$option 		= self::get_option();;
@@ -88,7 +87,7 @@ class RAB_Option{
 		update_option(self::RAB_SITE_OPTION,$options);
 	}
 
-	function get_option_socials(){
+	static function get_option_socials(){
 		$default = array(
 					'google_url'	=> '',
 					'facebook_url'	=> '',
@@ -104,9 +103,9 @@ class RAB_Option{
 		return wp_parse_args($options,$default);
 	}
 	function save_option_socials($name,$value){
-		$options = $this->get_option_socials();
+		$options = self::get_option_socials();
 		$options[$name] = $value;
-		update_option(self::RAB_SITE_SOCIALS,$options);
+		return update_option(self::RAB_SITE_SOCIALS,$options);
 	}
 	function get_logo_url(){
 
