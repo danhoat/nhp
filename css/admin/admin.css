@@ -80,6 +80,7 @@ textarea{
 	display: block;
 	padding-bottom: 7px;
 	font-weight: bold;
+	font-size: 15px;
 }
 .wp-admin .rab-content select{
 	display: block;
