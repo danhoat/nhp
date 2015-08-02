@@ -5,8 +5,8 @@ Class RAB_Settings extends RAB_Add_Menu_Backend{
 
 	public function __construct(){
 		$args = array(
-		  		'page_title' 	=> __('Rab Settings',RAB_DOMAIN),
-		  		'menu_title' 	=> __('Rab Settings',RAB_DOMAIN),
+		  		'page_title' 	=> __('Theme Settings',RAB_DOMAIN),
+		  		'menu_title' 	=> __('Theme Settings',RAB_DOMAIN),
 		  		'slug' 			=> 'rab-settings',
 	  		);
 		parent::__construct($args);
@@ -53,7 +53,7 @@ Class RAB_Settings extends RAB_Add_Menu_Backend{
 
 					<div class="form-item">
 						<label> <?php _e('Website Description', RAB_DOMAIN);?></label>
-					 	<textarea type="text"   class="option" name="site_description" /><?php echo $site_description;?></textarea>
+					 	<input type="text"   class="option" name="site_description" value="<?php echo $site_description;?>" />
 					</div>
 
 					<div class="form-item">
@@ -61,7 +61,7 @@ Class RAB_Settings extends RAB_Add_Menu_Backend{
 
 						<?php		$google_fonts = ra_list_google_fonts();			?>
 						<select name="ra_google_font" class="option select" >
-							<option value="0">Select Google Font</option>
+							<option value="0"><?php _e('Select Google Font', RAB_DOMAIN); ?></option>
 							<?php
 					 		foreach ($google_fonts as $key => $font) { ?>
 

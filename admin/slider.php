@@ -3,36 +3,36 @@ if(class_exists('RAB_Add_Menu_Backend')){
 
 	Class RAB_Slider extends RAB_Add_Menu_Backend{
 		protected $list_slider = null;
-		public function __construct(){	
+		public function __construct(){
 		 	$slider = array(
 			  		'page_title' 	=> 'Slider',
 			  		'menu_title' 	=> 'Slider Settings',
 			  		'slug' 			=> 'rab-slider',
-			  		
+
 		  		);
 		 	$this->list_slider = RAB_Option::get_slider();
 			parent::__construct($slider);
-			add_action('admin_enqueue_scripts',array($this,'load_wp_admin_rab_style'));		
+			add_action('admin_enqueue_scripts',array($this,'load_wp_admin_rab_style'));
 		}
 		function page_load_scripts(){
 
 		}
-		
+
 		function rab_main(){ ?>
 			<div class="rab-content">
 				<div class="general">
 					<?php
 					$slider = $this->list_slider;
-					
+
 					if(count($slider) > 0 && is_array($slider)){
-						
+
 						foreach ($slider as $key=>$value) {
-							
+
 							echo '<div class="form-item">';
-								echo $key; 
+								echo $key;
 								echo $value;
 							echo '</div>';
-							
+
 						}
 					}
 					?>
@@ -53,8 +53,8 @@ if(class_exists('RAB_Add_Menu_Backend')){
 						</div>
 					</form>
 				</div>
-			</div>	
-		<?php    		
+			</div>
+		<?php
 		}
 
 		function load_wp_admin_rab_style(){
@@ -70,7 +70,7 @@ if(class_exists('RAB_Add_Menu_Backend')){
 	}
 
 
-	new RAB_Slider();	
+	new RAB_Slider();
 }
 
 ?>

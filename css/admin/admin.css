@@ -79,6 +79,7 @@ textarea{
 .form-item label{
 	display: block;
 	padding-bottom: 7px;
+	font-weight: bold;
 }
 .wp-admin .rab-content select{
 	display: block;
