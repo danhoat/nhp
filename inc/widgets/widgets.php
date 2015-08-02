@@ -79,7 +79,7 @@ class RAB_Facebook_Fan_Page extends WP_Widget {
 			  js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
-		<div class="fb-like-box" data-href="<?php echo $fb_url;?>" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="<?php echo $show_post;?>" data-show-border="false"></div>
+		<div class="fb-like-box" data-width="248" data-href="<?php echo $fb_url;?>" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="<?php echo $show_post;?>" data-show-border="false"></div>
 
 		<?php
 		echo $after_widget;
@@ -109,7 +109,7 @@ class RAB_Facebook_Fan_Page extends WP_Widget {
 			<input type="text" class="widefat" name="<?php echo $this->get_field_name('fb_url');?>" value="<?php echo esc_attr($fb_url);?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('exclude'); ?>"><?php _e( 'Show Posts',RAB_DOMAIN ); ?> :</label> 
+			<label for="<?php echo $this->get_field_id('exclude'); ?>"><?php _e( 'Show Posts',RAB_DOMAIN ); ?> :</label>
 			<input value="1" <?php if($show_post) echo 'checked ="checked"';?> type="checkbox" class="widefat" name="<?php echo $this->get_field_name("show_post");?>" />
 
 		</p>
