@@ -1,17 +1,17 @@
 <?php
 	/**
-	 * Adds Foo_Widget widget.
+	 * Adds Posts Tabs widget
 	 */
-	class RAB_Social_Widget extends WP_Widget {
+	class RAB_Posts_Tabs_Widget extends WP_Widget {
 
 		/**
 		 * Register widget with WordPress.
 		 */
 		function __construct() {
 			parent::__construct(
-				'social_link', // Base ID
-				__( 'Social links', RAB_DOMAIN ), // Name
-				array( 'description' => __( 'Appearance list social links', RAB_DOMAIN ), ) // Args
+				'posts_tabs', // Base ID
+				__( 'Post tabs', RAB_DOMAIN ), // Name
+				array( 'description' => __( 'Appearance list post via tabs', RAB_DOMAIN ), ) // Args
 			);
 		}
 
@@ -28,16 +28,36 @@
 			if ( ! empty( $instance['title'] ) ) {
 				echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
 			}
-			$options = RAB_Option::get_option_socials();
-			if( is_array( $options) &&  !empty( $options) ){
-				echo '<ul class="list-social">';
-					foreach ($options as $key => $value) {
-						if(empty( $value ))
-							continue;
-						echo '<li class ="social-icon item-'.$key.'"><a target ="_blank" href="'.esc_url($value).'"><span>'.$key.'</span> </a></li>';
-					}
-				echo '</ul>';
-			}
+			?>
+			  <!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Recent</a></li>
+				    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Popular</a></li>
+				</ul>
+
+				  <!-- Tab panes -->
+				 <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="home">
+				    	<?php
+				    		$args = array(
+				    			'post_type' 	=> 'post',
+				    			'post_status' 	=> 'publish',
+				    			);
+				    		$the_query = new WP_Query($args);
+				    		if ( $the_query->have_posts() ):
+				    			echo '<ul class="list-post">';
+					    		while($the_query->have_posts()):
+					    			$the_query->the_post();
+					    			echo '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+					    		endwhile;
+					    		echo '</ul>';
+					    	endif;
+				    	?>
+
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="profile">222</div>
+				 </div>
+			<?php
 			echo $args['after_widget'];
 		}
 

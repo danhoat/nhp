@@ -200,6 +200,7 @@ Class RAB_Site{
 		 */
 
 		wp_register_script( 'bootstrap-js',get_stylesheet_directory_uri().'/bootstrap/js/bootstrap.min.js');
+		wp_register_script( 'bts-tab-js',get_stylesheet_directory_uri().'/bootstrap/js/tab.js');
 		wp_register_script( 'bootstrap-button-js',get_stylesheet_directory_uri().'/bootstrap/js/bootstrap.min.js', array('bootstrap-js'));
 		wp_register_script( 'jquery-ui','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js');
 		//END BOOTSTRAP
@@ -227,6 +228,8 @@ Class RAB_Site{
 		);
 
 		wp_enqueue_script( 'bootstrap-button-js' );
+		wp_enqueue_script( 'bts-tab-js' );
+
 
 	}
 
@@ -324,7 +327,7 @@ Class RAB_Site{
 		register_widget( 'RAB_Twitter_Time_line' );
 		register_widget( 'RAB_Slider_Widget' );
 		register_widget( 'RAB_Social_Widget' );
-
+		register_widget( 'RAB_Posts_Tabs_Widget' );
 	}
 	/**
 	 * get html for case that the post no thumbnail.

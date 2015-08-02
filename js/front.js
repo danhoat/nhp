@@ -41,6 +41,10 @@
     }
 
 	$(document).ready(function(){
+		$('.nav-tabs  a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
 
 		var val = $('form.form-contact').validate({
 				rules: {
