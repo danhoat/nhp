@@ -11,7 +11,8 @@
 		$body 		= ra_get_header_email();
 		$body 		.= $message;
 		$body 		.= ra_get_footer_email();
-
+		$body = preg_replace('~>\s+<~', '><', $body);
+   	 	$body = preg_replace('/\s\s+/', ' ', $body);
 		$send 		= wp_mail( $to, $subject, $body, $header );
 
 		// Reset content-type to avoid conflicts -- http://core.trac.wordpress.org/ticket/23578
