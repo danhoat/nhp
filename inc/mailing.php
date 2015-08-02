@@ -46,7 +46,22 @@
 
 	if( !function_exists( 'ra_get_footer_email' ) ):
 		function ra_get_footer_email(){
-			$footer = '</body></html>';
+			$footer ='<tr>
+				<td><table width="390" cellspacing="0" cellpadding="0" border="0" align="left"><tr><td>Copyright © Zoho Corporation 2014, All rights reserved.</td></tr></table>
+			<table width="184" cellspacing="0" cellpadding="0" border="0" align="right">
+				<tr>
+				<td>
+					<a target="_blank" href="https://www.facebook.com/zoho">
+						<img width="8" height="16" style="line-height:0px;font-size:0px;border:0px;margin-left:20px;padding:3px" src="https://www.zoho.com/docs/images/email-templates/facebook.png" alt="img" class="CToWUd">
+					</a>
+					<a target="_blank" href="https://twitter.com/zoho"><img width="16" height="13" style="line-height:0px;font-size:0px;border:0px;margin-left:20px;padding:3px" src="https://www.zoho.com/docs/images/email-templates/twitter.png" alt="img" class="CToWUd"></a>
+					<a target="_blank" href="https://www.linkedin.com/groups/ZOHO-Docs-2125232"><img width="15" height="15" style="line-height:0px;font-size:0px;border:0px;margin-left:20px;padding:3px" src="https://www.zoho.com/docs/images/email-templates/linkedin.png" alt="img" class="CToWUd">
+					</a>
+				</td>
+				</tr>
+			</table>
+			</td></tr>';
+			$footer .= '</body></html>';
 			return $footer;
 		}
 	endif;
