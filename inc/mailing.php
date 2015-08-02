@@ -11,8 +11,8 @@
 		$body 		= ra_get_header_email();
 		$body 		.= $message;
 		$body 		.= ra_get_footer_email();
-		$body = preg_replace('~>\s+<~', '><', $body);
-   	 	$body = preg_replace('/\s\s+/', ' ', $body);
+		$body 		= preg_replace('~>\s+<~', '><', $body);
+   	 	$body 		= preg_replace('/\s\s+/', ' ', $body);
 		$send 		= wp_mail( $to, $subject, $body, $header );
 
 		// Reset content-type to avoid conflicts -- http://core.trac.wordpress.org/ticket/23578
@@ -36,8 +36,8 @@
 
 	if( !function_exists( 'ra_get_footer_email' ) ):
 		function ra_get_footer_email(){
-			$footer ='</td></tr><tr><td>
-					<table width="390" cellspacing="0" cellpadding="0" border="0" align="left"><tr><td>Copyright © Zoho Corporation 2014, All rights reserved.</td></tr></table>
+			$footer ='</td></tr><tr><td align="center" style="background-color:#f9f9f9;border-top:1px solid #f5f5f5;margin:0;padding:0">
+					<table width="390" cellspacing="0" cellpadding="0" border="0" align="left"><tr><td>Copyright © rabthemes Corporation 2014, All rights reserved.</td></tr></table>
 					<table width="184" cellspacing="0" cellpadding="0" border="0" align="right">
 						<tr>
 							<td>
