@@ -51,7 +51,7 @@
 					</table>
 				</td>
 				</tr>';
-			$footer .= '</body></html>';
+			$footer .= '</table></body></html>';
 			return $footer;
 		}
 	endif;
