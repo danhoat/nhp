@@ -1,22 +1,22 @@
-<?php 
+ <?php
 Class RAB_Languages extends RAB_Add_Menu_Backend{
 
-	public function __construct(){	
+	public function __construct(){
 	 	$comment = array(
 		  		'page_title' 	=> 'Languages Settings',
 		  		'menu_title' 	=> 'Languages Settings',
 		  		'slug' 			=> 'rab-languages',
-		  		
+
 	  		);
 		parent::__construct($comment);
-		//add_action('admin_enqueue_scripts',array($this,'load_wp_admin_rab_style'));		
+		//add_action('admin_enqueue_scripts',array($this,'load_wp_admin_rab_style'));
 	}
 	function page_load_scripts(){
 
 	}
-	
+
 	function rab_main(){
-		echo ' noi dung cua language';		
+		echo ' noi dung cua language';
 	}
 
 	function load_wp_admin_rab_style(){

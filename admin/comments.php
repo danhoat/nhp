@@ -1,23 +1,23 @@
-<?php 
+<?php
 Class RAB_Commenting extends RAB_Add_Menu_Backend{
 
-	public function __construct(){	
+	public function __construct(){
 	 	$comment = array(
 		  		'page_title' 	=> 'Comments Settings',
 		  		'menu_title' 	=> 'Comments Settings',
-		  		'slug' 			=> 'rab-comments'		  		
+		  		'slug' 			=> 'rab-comments'
 	  		);
 		parent::__construct($comment);
-			
+
 	}
-	
+
 	function rab_main(){
-		
+
 	}
 
 	function page_load_scripts(){
-		global $plugin_page;		
-		if($this->slug == $plugin_page){	        		
+		global $plugin_page;
+		if($this->slug == $plugin_page){
 			wp_enqueue_script('rab-settings',get_stylesheet_directory_uri().'/js/admin/comments.js',array('backbone') );
 		}
 	}
