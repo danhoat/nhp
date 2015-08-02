@@ -79,7 +79,7 @@ class RAB_Facebook_Fan_Page extends WP_Widget {
 			  js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
-		<div class="fb-like-box" data-width="248" data-href="<?php echo $fb_url;?>" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="<?php echo $show_post;?>" data-show-border="false"></div>
+		<div class="fb-like-box" data-width="277" data-href="<?php echo $fb_url;?>" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="<?php echo $show_post;?>" data-show-border="false"></div>
 
 		<?php
 		echo $after_widget;
