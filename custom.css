@@ -390,3 +390,12 @@ ul, ol {
     display: block;
     clear: both;
 }
+
+/** NEW PLUGIN ADD */
+#sidebar .ssba img{
+    max-width: 45px;
+}
+.ssba.ssba-wrap {
+    padding: 15px 0;
+}
+/* END PLUGINS */
