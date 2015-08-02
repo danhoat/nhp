@@ -5,7 +5,7 @@
 // echo '</pre>';
 
 function test_check_for_update($data) {
-	$path 			= 'http://rabthemes.com/check_update.json';
+	$path 			= 'http://rabthemes.com/update/check_update.json';
 	$request 		= wp_remote_post($path);
 	$remote_version = $request['body'];
 
@@ -14,7 +14,7 @@ function test_check_for_update($data) {
   		$data->response['nhp'] = array(
 		    'theme'       => 'nhp',
 		    'new_version' => $new_version,
-		    'url'         => 'http://localhost/namhaphat/',
+		    'url'         => 'http://rabthemes.com/',
 		    'package'     => 'http://rabthemes.com/?do=update_product',
 	  	);
   	}
