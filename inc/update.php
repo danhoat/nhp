@@ -1,20 +1,21 @@
 <?php
-$current = get_site_transient('update_themes');
+//$current = get_site_transient('update_themes');
 // echo '<pre>';
 // var_dump($current);
 // echo '</pre>';
 
 function test_check_for_update($data) {
-	$path 			= 'http://localhost/namhaphat/check_update.json';
+	$path 			= 'http://rabthemes.com/check_update.json';
 	$request 		= wp_remote_post($path);
-	$remote_version 	= $request['body'];
+	$remote_version = $request['body'];
 
-	if (version_compare(RAB_VERSION, $remote_version, '<')) {
+	if ( version_compare(RAB_VERSION, $remote_version, '<') ) {
+
   		$data->response['nhp'] = array(
 		    'theme'       => 'nhp',
 		    'new_version' => $new_version,
 		    'url'         => 'http://localhost/namhaphat/',
-		    'package'     => 'http://localhost/namhaphat/?do=update_product',
+		    'package'     => 'http://rabthemes.com/?do=update_product',
 	  	);
   	}
 
