@@ -13,6 +13,7 @@ require get_template_directory() . '/woo/index.php';
 require get_template_directory() . '/admin/options.php';
 require get_template_directory() . '/inc/mailing.php';
 require get_template_directory() . '/inc/rab_ajax_action.php';
+require get_template_directory() . '/inc/update.php';
 
 
 
