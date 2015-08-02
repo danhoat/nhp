@@ -323,6 +323,7 @@ Class RAB_Site{
 		register_widget( 'RAB_Facebook_Fan_Page' );
 		register_widget( 'RAB_Twitter_Time_line' );
 		register_widget( 'RAB_Slider_Widget' );
+		register_widget( 'RAB_Social_Widget' );
 
 	}
 	/**
