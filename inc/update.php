@@ -24,4 +24,3 @@ function test_check_for_update($data) {
 add_filter('pre_set_site_transient_update_themes', 'test_check_for_update', 100, 1);
 
 ?>
-?>
