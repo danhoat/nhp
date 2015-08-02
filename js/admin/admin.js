@@ -4,6 +4,7 @@
 		el : 'div#rab_backend',
 		events : {
 			'change input.option' 			: 'saveOption',
+			'change input.sc-option' 		: 'SaveSocialOption',
 			'change select.option'	 		: 'saveOption',
 			'change textarea.option' 		: 'saveOption',
 			'submit form.save-opt-slider' 	: 'saveSlider',
@@ -24,7 +25,7 @@
 						};
 
 			var upload_logo = new RAB.Fiel_Uploader({button:button, action: action,config:config});
-			
+
 		},
 		saveOption : function(event){
 			event.preventDefault();
@@ -32,13 +33,13 @@
 			var target 	= $(event.currentTarget),
 				html 	= '';
 			if(target.hasClass('select'))
-				html = target.find(":selected").text();			
+				html = target.find(":selected").text();
 
 			$.ajax({
 				url : rab_globals.ajaxUrl,
 				type : 'post',
 				data : {
-					action :'save-option',
+					action :'save-social-option',
 					name :target.attr('name'),
 					value : target.val(),
 					html : html,
@@ -51,6 +52,33 @@
 				}
 			});
 		},
+
+		SaveSocialOption : function(event){
+			event.preventDefault();
+
+			var target 	= $(event.currentTarget),
+				html 	= '';
+			if(target.hasClass('select'))
+				html = target.find(":selected").text();
+
+			$.ajax({
+				url : rab_globals.ajaxUrl,
+				type : 'post',
+				data : {
+					action :'save-social-option',
+					name :target.attr('name'),
+					value : target.val(),
+					html : html,
+				},
+				beforeSend :function(){
+
+				},
+				success : function(res){
+					console.log('success');
+				}
+			});
+		},
+
 		saveSlider : function(event){
 			console.log(event);
 			console.log(this);
@@ -68,13 +96,13 @@
 					console.log('success');
 				}
 			});
-			
+
 			return false;
 		},
 
 	});
 	jQuery(document).ready(function(){
-		
+
 		new RAB.Views();
 	})
 })(jQuery);

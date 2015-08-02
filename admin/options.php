@@ -20,6 +20,7 @@ class RAB_Option{
 						self::RA_GOOLE_ANALYTIC => '',
 					);
 		add_action( 'wp_ajax_save-option', array( $this, 'rab_save_option') );
+		add_action( 'wp_ajax_save-social-option', array( $this, 'rab_save_social_option') );
 		add_action( 'wp_ajax_save-slider', array( $this, 'rab_save_slider') );
 	}
 
@@ -49,9 +50,7 @@ class RAB_Option{
 				update_option('blogdescription', $value);
 				break;
 
-
 			default:
-
 			update_option($name, $value);
 
 		}
@@ -61,11 +60,22 @@ class RAB_Option{
 	}
 
 	function rab_save_option(){
+
 		$request = $_POST;
 		$this->set_option($request['name'],$request['value'],$request['html']);
 		$resp = array('success' => true,'msg' => __('Save option success',RAB_DOMAIN));
 		wp_send_json($resp);
 	}
+
+	function rab_save_social_option(){
+
+		$request = $_POST;
+		$url = esc_url($request['value']);
+		$this->save_option_socials($request['name'],$request['value']);
+		$resp = array('success' => true,'msg' => __('Save option success',RAB_DOMAIN));
+		wp_send_json($resp);
+	}
+	
 
 	function get_options_sites(){
 		$option 		= self::get_option();;
@@ -80,11 +90,14 @@ class RAB_Option{
 
 	function get_option_socials(){
 		$default = array(
-					'google'	=> '',
-					'facebook'	=> '',
-					'twitter'	=> '',
-					'printest'	=> '',
-					'flick'		=> ''
+					'google_url'	=> '',
+					'facebook_url'	=> '',
+					'twitter_url'	=> '',
+					'printest_url'	=> '',
+					'linkedin_url'	=> '',
+					'dribble_url' 	=> '',
+					'flick_url' 	=> '',
+
 					);
 		$options = get_option(self::RAB_SITE_SOCIALS,array());
 
@@ -106,6 +119,10 @@ class RAB_Option{
 
 		return get_template_directory().'/images/logo.png';
 
+	}
+	function check_permission(){
+		if ( !current_user_can('manage_options') )
+			wp_send_json( array( 'success' => false, 'msg' => __('You don\'t have permission to access', RAB_DOMAIN) ) );
 	}
 
 }
