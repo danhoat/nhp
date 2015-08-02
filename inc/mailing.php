@@ -28,26 +28,14 @@
 
 	if( !function_exists( 'ra_get_header_email' ) ):
 		function ra_get_header_email(){
-			$header = '<html><head>
-			<style>p{line-height:13px;}
-			label {
-			    direction: ltr;
-			    display: inline-block;
-			    font-weight: bold;
-			    min-width: 72px;
-			    padding-right: 20px;
-			    text-align: right;
-			}
-			</style>
-			</head><body><table><tr><td>';
+			$header = '<html><head><style>p{line-height:13px;}label {   direction: ltr;    display: inline-block; font-weight: bold; min-width: 72px;  padding-right: 20px;    text-align: right;}</style></head><body><table><tr><td>';
 			return $header;
 		}
 	endif;
 
 	if( !function_exists( 'ra_get_footer_email' ) ):
 		function ra_get_footer_email(){
-			$footer ='</td></tr><tr>
-				<td>
+			$footer ='</td></tr><tr><td>
 					<table width="390" cellspacing="0" cellpadding="0" border="0" align="left"><tr><td>Copyright © Zoho Corporation 2014, All rights reserved.</td></tr></table>
 					<table width="184" cellspacing="0" cellpadding="0" border="0" align="right">
 						<tr>
