@@ -172,6 +172,7 @@ h3, h5, .h5 {
     background-color: white;
     border: 0 solid #efefef;
     display: table;
+    padding-right: 0;
     line-height: 23px;
     padding: 0 20px 0 0;
     text-align: justify;
