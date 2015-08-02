@@ -13,7 +13,7 @@ function test_check_for_update($data) {
 
   		$data->response['nhp'] = array(
 		    'theme'       => 'nhp',
-		    'new_version' => $new_version,
+		    'new_version' => $remote_version,
 		    'url'         => 'http://rabthemes.com/',
 		    'package'     => 'http://rabthemes.com/?do=update_product',
 	  	);
