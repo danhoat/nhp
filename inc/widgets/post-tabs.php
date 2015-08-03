@@ -32,7 +32,7 @@
 			  <!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
 				    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Recent</a></li>
-				    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Popular</a></li>
+				    <li role="presentation"><a href="#post_popular" aria-controls="post_popular" role="tab" data-toggle="tab">Popular</a></li>
 				</ul>
 
 				  <!-- Tab panes -->
@@ -53,9 +53,40 @@
 					    		echo '</ul>';
 					    	endif;
 				    	?>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="post_popular">
+				    	<?php
+				    		$args = array(
+				    			'post_type' 	=> 'post',
+				    			'post_status' 	=> 'publish',
+				    			//'meta_key' 		=> '_post_views',
+				    			'orderby'   	=> 'meta_value_num',
+				    			'meta_query' 	=>  array(
+				                    'relation' => 'OR',
+				                    array(
+				                        'key' => '_post_views',
+				                        'compare' => 'NOT EXISTS',
+				                        'value'   => 'completely'
+				                    ),
+				                    array(
+				                        'key' 		=> '_post_views',
+				                        'complate' 	=>'!=',
+				                       	'value' 		=> '1'
+				                    )
+				                ),
+				    		);
+				    		$the_query = new WP_Query($args);
+				    		if ( $the_query->have_posts() ):
+				    			echo '<ul class="list-post list-post-popular">';
+					    		while($the_query->have_posts()):
+					    			$the_query->the_post();
+					    			echo '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+					    		endwhile;
+					    		echo '</ul>';
+					    	endif;
+				    	?>
 
 				    </div>
-				    <div role="tabpanel" class="tab-pane" id="profile">222</div>
 				 </div>
 			<?php
 			echo $args['after_widget'];
