@@ -14,7 +14,9 @@
                     echo '<div class="col-md-4 center">';
                     the_post_thumbnail();
                     echo '<h4 class="center"><a href="'.get_permalink().'">'.get_the_title().'</a></h4>';
+                    echo '<div class="expert">';
                     the_excerpt();
+                    echo '</div>';
                     echo '</div>';
                 }
 

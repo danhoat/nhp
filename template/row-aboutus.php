@@ -5,12 +5,10 @@
 		</h2>
 		<hr width="400px">
 		<div style="text-align: center;">
-			WordPress Customize is the swiftly progressing and best WordPress customization service
-			 providing company. We provides industry’s (Only WordPress)
-			best available themes with easy to use and user friendly WordPress solution.
-			best available themes with easy to use and user friendly WordPress solution.
-			best available themes with easy to use and user friendly WordPress solution.
-			Our highly skilled developers&nbsp;and creative designers who works for the continuous enhancement of quality.
+			Được thành lập từ tháng 10/2017 tới nay, công ty chúng tôi đã không ngừng lớn mạnh và khẳng định được vị trí của
+			mình trong nghành trang trí và thiết kế nội thất. Với thế mạnh về gỗ và cơ khí, công ty chúng tôi cung cấp cho hơn 20 đối tác trên địa bàn tỉnh Bà Rịa-Vũng Tàu.
+			Mặt hàng nhiều thể loại, nhiều thiết kế khác nhau đưa đến cho khách hàng những sự lựa chọn phù hợp và tiện lợi nhất.
+
 		</div>
 	</div>
 </div>
