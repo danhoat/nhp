@@ -9,11 +9,20 @@
 		'before_title'  => '<h5 class="widget-title">',
 		'after_title'   => '</h5>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Home Full Width', 'rabsite' ),
+		'id'            => 'home_top_full',
+		'description'   => __( 'Home Full Width.', 'rabsite' ),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Top header  sidebar', 'rabsite' ),
 		'id'            => 'header',
-		'description'   => __( 'Header page.', 'twentyfourteen' ),
+		'description'   => __( 'Header page.', 'rabsite' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h5 class="widget-title">',
@@ -49,9 +58,6 @@
 		'before_title'  => '<h5 class="title-widget">',
 		'after_title'   => '</h5>',
 	) );
-
-
-
 
 /**
  * facebook fan page widget

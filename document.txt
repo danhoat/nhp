@@ -4,8 +4,8 @@ http://anthemes.net/themes/?product=boutique
 menu + sidebar + slider
 http://themes.tielabs.com/?theme=sahifa
 
-slider 
+slider
 http://hogash.com/themeforest/?theme=kallyas_wp
 
 get images, thumbnail demo
-http://www.ideashomeconcept.com 
+http://www.ideashomeconcept.com
