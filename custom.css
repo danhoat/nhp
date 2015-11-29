@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1024px;
     padding: 0 15px;
 }
 
@@ -401,6 +401,9 @@ ul, ol {
     display: block;
     clear: both;
 }
+.pagination .page-numbers{
+    float: right;
+}
 .nav-tabs li:first-child a{
     border-right: 0;
 }
@@ -439,4 +442,17 @@ ul, ol {
 /* END PLUGINS */
 .bg-white{
     background: #fff;
+}
+.center{
+    text-align: center;
+}
+hr{
+    margin-top: 10px;
+}
+.entry-header.col-sm-8{
+    padding-right: 0;
+    padding-left: 0;
+}
+img{
+    max-width: 100%;
 }
