@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row row-about-us">
 	<div class="container">
 		<h2 style="text-align: center;">
 			Công ty Nam Hà Phát

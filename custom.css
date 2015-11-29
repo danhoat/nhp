@@ -460,3 +460,14 @@ hr{
 img{
     max-width: 100%;
 }
+.row-about-us{
+    background: url('images/bg-about-us.jpg');
+    height: 250px;
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #fff;
+}
+.footer-site{
+    background: url('images/footer-bg.jpg');
+    color: #000;
+}
