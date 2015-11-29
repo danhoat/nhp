@@ -1,6 +1,6 @@
 <div class="row">
     <div class="container">
-        <h2 class="center"> Sản phẩm nổi bật </h2>
+        <h2 class="center"> Sản Phẩm Nổi Bật </h2>
         <hr width="400px">
         <?php
             $args = array( 'hide_empty'=> 0);

@@ -15,7 +15,7 @@
 ?>
 <?php //get_template_part('template/grid','product' ); ?>
 <?php get_template_part( 'template/grid', 'category' ); ?>
-<?php get_template_part( 'template/row', 'aboutus' ); ?>
 <?php get_template_part( 'template/grid', 'services' ); ?>
+<?php get_template_part( 'template/row', 'aboutus' ); ?>
 
 <?php get_footer();?>
