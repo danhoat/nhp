@@ -81,6 +81,9 @@ nav div.col-md-8{
     padding: 0;
     margin: 0;
 }
+nav div.col-md-8{
+    padding-left:123px;
+}
 nav ul.main-menu {
     padding: 0;
     margin: 0;
@@ -109,6 +112,7 @@ nav ul.main-menu li {
 }
 .menu-main .menu-main-menu-container li:last-child a{
     border-right: 0;
+    padding-right: 0;
 }
 .menu-main .menu-main-menu-container li a:hover, .menu-main li.current-menu-item a {
     color: #eb911f;

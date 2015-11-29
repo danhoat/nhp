@@ -28,9 +28,8 @@
                         <img src="http://cdn.wordpresscustomize.com/wp-content/uploads/2014/12/WordPress-Customize-Service.jpg" />
                       </a>
                   </div>
-                  <div class="col-md-8">
-                      <?php wp_nav_menu(array( 'theme_location' => apply_filters( RAB_DOMAIN, 'main_menu' ) ,'menu_class' => 'main-menu' ,'container_class' => 'menu-main-menu-container' ));?>
-                  </div>
+                  <?php wp_nav_menu(array( 'theme_location' => apply_filters( RAB_DOMAIN, 'main_menu' ) ,'menu_class' => 'main-menu ' ,'container_class' => 'menu-main-menu-container col-md-8' ));?>
+
              </div>
 
           </nav>

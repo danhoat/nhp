@@ -76,7 +76,9 @@ div.top-row .row{
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-
+	nav div.col-md-8{
+		padding-left: 0;
+	}
 }
 
 

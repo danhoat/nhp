@@ -1,6 +1,6 @@
 <div class="row">
     <div class="container">
-        <h2 class="center"> Các lĩnh vực kinh doanh </h2>
+        <h2 class="center"> Lĩnh vực kinh doanh </h2>
         <hr width="400px">
         <?php
             $term = get_term_by('slug', 'dich-vu', 'category');
